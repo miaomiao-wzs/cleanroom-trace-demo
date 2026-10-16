@@ -726,7 +726,7 @@ html[data-theme="paper"] .am-md table { font-family: var(--font-sans); }
 <button class="am-btn" type="button" data-am="copy" data-done="已复制 ✓">复制源稿</button>
 </div>
 <main class="am-doc">
-<header class="am-head"><h1>两车间300套 · 实物识别方案</h1><p class="am-sub">新制安装300个二维码 · 全厂集中共用3个操作点</p><div class="am-head-meta"><span><b>日期</b>2026-10-16</span><span><b>版本</b>集中三点口径 V1.2</span></div><div class="am-intro am-md"><div class="am-md"><p><strong>一期推荐二维码＋带屏PDA。NFC备选，手写OCR仅作辅助。</strong></p>
+<header class="am-head"><h1>两车间300套 · 实物识别方案</h1><p class="am-sub">300套 · 集中共用3点 · OCR改用3台专用手机</p><div class="am-head-meta"><span><b>日期</b>2026-10-16</span><span><b>版本</b>手机OCR口径 V1.3</span></div><div class="am-intro am-md"><div class="am-md"><p><strong>一期推荐二维码＋带屏PDA。NFC备选，手机OCR仅作辅助。</strong></p>
 </div></div></header>
 <div class="am-doc-layout">
 <nav class="am-toc" aria-label="目录"><a href="#panel-A">A · 先看结论</a><a href="#panel-B">B · 先统一比较口径</a><a href="#panel-C">C · 硬件要买什么，预计多少钱</a><a href="#panel-D">D · 识别功能开发和验证费用</a><a href="#panel-E">E · 优缺点和实物风险</a><a href="#panel-F">F · 完整正式系统的预算边界</a><a href="#panel-G">G · 建议如何落地</a><a href="#panel-H">H · 资料依据与使用范围</a></nav><div class="am-doc-body">
@@ -755,9 +755,9 @@ NFC 作为条件性备选；手写 OCR 不作为一期主识别。</p>
 <td>要新增标签、终端和绑定管理</td>
 </tr>
 <tr>
-<td>手写编号＋OCR</td>
+<td>手写编号＋手机OCR</td>
 <td><span class="am-status am-status--warn"><span class="am-status-icon" aria-hidden="true">!</span>仅作辅助试验</span></td>
-<td>笔便宜，成像、复核和验证并不省事</td>
+<td>手机可减少设备；字迹识别、复核和验证仍需投入</td>
 </tr>
 </tbody></table></div>
 <p><strong>推荐前提：新制二维码及安装方式通过清洗、灭菌后的适用性验证。</strong></p>
@@ -765,7 +765,7 @@ NFC 作为条件性备选；手写 OCR 不作为一期主识别。</p>
 </section>
 <section class="am-panel" id="panel-B">
 <header class="am-panel-head"><span class="am-panel-id">B</span><h2>先统一比较口径</h2></header>
-<div class="am-panel-body"><dl class="am-kv" style="--kv-cols: 2"><div class="am-kv-cell"><dt>已确认规模</dt><dd>近期2个生产车间，每车间约150套</dd></div><div class="am-kv-cell"><dt>二维码要求</dt><dd>新制作并安装300个，对应300套</dd></div><div class="am-kv-cell"><dt>现场条件</dt><dd>各操作点均需采购操作终端</dd></div><div class="am-kv-cell"><dt>标识条件</dt><dd>二维码或ID卡均随衣物清洗和灭菌</dd></div><div class="am-kv-cell"><dt>NFC采购</dt><dd>360枚，其中60枚为20%备用</dd></div><div class="am-kv-cell"><dt>已确认点位</dt><dd>全厂集中处理，共用3个操作点</dd></div><div class="am-kv-cell"><dt>终端形态</dt><dd>二维码用移动PDA；NFC/OCR按固定台</dd></div><div class="am-kv-cell"><dt>工艺状态</dt><dd>灭菌方式和参数仍未确认</dd></div><div class="am-kv-cell"><dt>人工费率</dt><dd>1,500—2,500元/人天</dd></div><div class="am-kv-cell"><dt>时间口径</dt><dd>1人天为8小时，不是日历天</dd></div></dl>
+<div class="am-panel-body"><dl class="am-kv" style="--kv-cols: 2"><div class="am-kv-cell"><dt>已确认规模</dt><dd>近期2个生产车间，每车间约150套</dd></div><div class="am-kv-cell"><dt>二维码要求</dt><dd>新制作并安装300个，对应300套</dd></div><div class="am-kv-cell"><dt>现场条件</dt><dd>各操作点均需采购操作终端</dd></div><div class="am-kv-cell"><dt>标识条件</dt><dd>二维码或ID卡均随衣物清洗和灭菌</dd></div><div class="am-kv-cell"><dt>NFC采购</dt><dd>360枚，其中60枚为20%备用</dd></div><div class="am-kv-cell"><dt>已确认点位</dt><dd>全厂集中处理，共用3个操作点</dd></div><div class="am-kv-cell"><dt>终端形态</dt><dd>二维码用PDA；NFC用固定台；OCR用专用手机</dd></div><div class="am-kv-cell"><dt>OCR配置</dt><dd>新购3台安卓手机，厂内服务器承担识别</dd></div><div class="am-kv-cell"><dt>工艺状态</dt><dd>灭菌方式和参数仍未确认</dd></div><div class="am-kv-cell"><dt>人工费率</dt><dd>1,500—2,500元/人天</dd></div><div class="am-kv-cell"><dt>时间口径</dt><dd>1人天为8小时，不是日历天</dd></div></dl>
 <div class="am-callout am-callout--warn" role="note"><div class="am-callout-title">所有金额都是预算假设，尚未取得供应商报价</div><div class="am-callout-body am-md"><p>300套来自用户提供的近期生产规模。
 全厂共用3点、300个二维码均已确认。
 标识材质、制作安装及设备价格仍需正式询价。
@@ -796,9 +796,9 @@ NFC耐工艺标签型号尚未确定，价格只是占位。
 <td align="right"><strong>1.75—3.89</strong></td>
 </tr>
 <tr>
-<td>手写OCR</td>
-<td>3套成像设备及终端、补光和标识耗材</td>
-<td align="right"><strong>1.25—2.57</strong></td>
+<td>手机OCR</td>
+<td>3台专用手机、支架补光、充电及标识耗材</td>
+<td align="right"><strong>0.80—1.97</strong></td>
 </tr>
 </tbody></table></div>
 <p>下面拆分全厂集中共用3点的采购预算。</p>
@@ -877,7 +877,7 @@ NFC耐工艺标签型号尚未确定，价格只是占位。
 <td align="right"><strong>17,500—38,900</strong></td>
 </tr>
 </tbody></table></div>
-<h3>OCR采购拆分</h3>
+<h3>手机OCR采购拆分</h3>
 <div class="am-table-wrap"><table>
 <thead>
 <tr>
@@ -887,19 +887,19 @@ NFC耐工艺标签型号尚未确定，价格只是占位。
 </tr>
 </thead>
 <tbody><tr>
-<td>相机或成像模块</td>
-<td>3套 × 500—1,500元</td>
-<td align="right">1,500—4,500</td>
+<td>专用安卓手机</td>
+<td>3台 × 1,500—3,500元</td>
+<td align="right">4,500—10,500</td>
 </tr>
 <tr>
-<td>操作终端</td>
-<td>3台 × 2,500—4,000元</td>
-<td align="right">7,500—12,000</td>
+<td>补光和拍照支架</td>
+<td>3套 × 200—500元</td>
+<td align="right">600—1,500</td>
 </tr>
 <tr>
-<td>补光和支架</td>
-<td>3套 × 300—800元</td>
-<td align="right">900—2,400</td>
+<td>充电及防护配件</td>
+<td>1批</td>
+<td align="right">300—900</td>
 </tr>
 <tr>
 <td>标识笔及试验耗材占位</td>
@@ -913,10 +913,14 @@ NFC耐工艺标签型号尚未确定，价格只是占位。
 </tr>
 <tr>
 <td><strong>合计</strong></td>
-<td>不含工业视觉升级和额外计算设备</td>
-<td align="right"><strong>12,500—25,700</strong></td>
+<td>手机兼做相机和操作终端</td>
+<td align="right"><strong>8,000—19,700</strong></td>
 </tr>
 </tbody></table></div>
+<p>手机价格是普通商用设备的预算占位，不是洁净区准入结论。
+若报价已含充电配件，应扣除重复项目。
+与原相机加电脑方案相比，硬件预算低4,500—6,000元。
+这是估算区间端点之差，不是已验证的采购节省。</p>
 <p><strong>三种方案均只计1套包装设备，为2,500—6,500元。</strong>
 若需要两套，三种方案都再加同样费用；无需新增则扣除。</p>
 <p>二维码的5—15元是标签及固定材料的新预算占位。
@@ -926,8 +930,11 @@ NFC耐工艺标签型号尚未确定，价格只是占位。
 <p>衣物二维码为300个。NFC比较方案按360枚采购。
 其中60枚是预算采用的备用量，不是额外衣物数。</p>
 <p>PDA自带屏幕和计算能力，不再重复买电脑。
-无屏扫码枪、NFC读卡器和普通相机均需配操作终端。
+手机OCR同时利用手机摄像头、屏幕和系统，不再采购相机及电脑。
+NFC固定读卡器仍需配套操作终端。
 如果NFC也要移动作业，应改报带屏NFC终端。</p>
+<p>手机也能扫二维码，但本页二维码方案仍按专业PDA报价。
+两种终端的扫描体验与洁净区适用性，应实机比较。</p>
 </div></div>
 </section>
 <section class="am-panel" id="panel-D">
@@ -952,7 +959,7 @@ NFC耐工艺标签型号尚未确定，价格只是占位。
 <td align="right"><strong>0.90—2.75</strong></td>
 </tr>
 <tr>
-<td>手写OCR</td>
+<td>手机OCR</td>
 <td align="right"><strong>12—23</strong></td>
 <td align="right"><strong>1.80—5.75</strong></td>
 </tr>
@@ -964,8 +971,13 @@ NFC耐工艺标签型号尚未确定，价格只是占位。
 </ul>
 <p>二维码常规验证已计入共用系统验证，不是免验证。
 NFC增加读卡接入、电子ID绑定和换卡控制。
-OCR增加成像、识别部署、候选编号和人工复核。</p>
-<p>OCR估算不含专用手写模型训练，也不承诺识别准确率。
+手机OCR增加拍照、图像上传、识别部署和人工复核。
+默认在厂内服务器识别，复用可用算力，不调用外部云OCR。
+若需新增推理服务器或商业许可，应另计费用。
+手机端独立推理属于另一技术路线，需单独评估。</p>
+<p>手机替代了相机和电脑，不替代OCR软件开发及验证。
+仍按一种安卓机型及浏览器估算，多平台兼容另估。
+OCR估算不含专用手写模型训练，也不承诺识别准确率。
 NFC若需非标准SDK或多种终端适配，应另估工作量。</p>
 <h3>采集部分小计</h3>
 <div class="am-table-wrap"><table>
@@ -984,8 +996,8 @@ NFC若需非标准SDK或多种终端适配，应另估工作量。</p>
 <td align="right"><strong>2.65—6.64</strong></td>
 </tr>
 <tr>
-<td>手写OCR</td>
-<td align="right"><strong>3.05—8.32</strong></td>
+<td>手机OCR</td>
+<td align="right"><strong>2.60—7.72</strong></td>
 </tr>
 </tbody></table></div>
 <p><strong>本表不含共用系统开发，也未加15%人天预留。</strong></p>
@@ -1001,7 +1013,7 @@ NFC若需非标准SDK或多种终端适配，应另估工作量。</p>
 <th>维度</th>
 <th>二维码PDA</th>
 <th>NFC刷卡</th>
-<th>手写OCR</th>
+<th>手机OCR</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -1020,13 +1032,13 @@ NFC若需非标准SDK或多种终端适配，应另估工作量。</p>
 <td>优点</td>
 <td>接入较直接，PDA可移动</td>
 <td>不依赖可见字符清晰度</td>
-<td>人眼可读，不需电子芯片</td>
+<td>手机可移动，兼做拍照和操作终端</td>
 </tr>
 <tr>
 <td>主要局限</td>
 <td>褶皱、污损、褪色及遮挡</td>
 <td>标签耐工艺、互换/脱落、读卡接入</td>
-<td>字迹差异、光照、褪色及误识别</td>
+<td>字迹差异、手持角度、光照及误识别</td>
 </tr>
 <tr>
 <td>隔袋读取</td>
@@ -1044,7 +1056,7 @@ NFC若需非标准SDK或多种终端适配，应另估工作量。</p>
 <td>后续维护</td>
 <td>补标、电池、设备清洁</td>
 <td>换标、绑定核对、驱动或SDK</td>
-<td>补写、成像条件、模型及复核规则</td>
+<td>手机清洁、成像条件、模型及复核规则</td>
 </tr>
 </tbody></table></div>
 </div>
@@ -1054,6 +1066,8 @@ OCR可能读成另一件真实存在的编号。
 三种方案都要核对首次绑定及换标记录。</p>
 </div></div>
 <div class="am-md"><h3>清洗和灭菌是共同约束</h3>
+<p>标识随衣物灭菌，手机不随衣物灭菌。
+QA需确认手机进区、清洁消毒及戴手套操作是否可行。</p>
 <p>普通PVC卡、普通NFC贴纸不能默认耐反复灭菌。
 标签的芯片、封装、天线和固定材料应一起验证。
 记号笔需评估掉色、扩散及对衣物性能的影响。
@@ -1107,15 +1121,16 @@ OCR可能读成另一件真实存在的编号。
 <td align="right"><strong>13.15—33.14</strong></td>
 </tr>
 <tr>
-<td>OCR＋新终端</td>
+<td>手机OCR</td>
 <td align="right">83—130</td>
-<td align="right"><strong>13.70—35.07</strong></td>
+<td align="right"><strong>13.25—34.47</strong></td>
 </tr>
 </tbody></table></div>
 <p>项目预算＝含预留的人天费用＋硬件采购。
 二维码安装人工及材料工艺试验尚待询价，未计入总额。</p>
 <p><strong>本表已经包含前面的识别工作和硬件，不要再次相加。</strong></p>
-<p>未计新增服务器、网络施工、特殊机型和额外许可。
+<p>未计新增后台或OCR推理服务器、网络施工及额外许可。
+特殊可消毒手机或更高防护等级设备需重新报价。
 材料工艺试验、现场人员工时、税运差旅也需另核实。
 报价区间重叠，最终应按相同范围比较供应商报价。</p>
 <h3>还要看每次操作耗时</h3>
@@ -1146,7 +1161,7 @@ OCR可能读成另一件真实存在的编号。
 </section>
 <section class="am-panel" id="panel-G">
 <header class="am-panel-head"><span class="am-panel-id">G</span><h2>建议如何落地</h2></header>
-<div class="am-panel-body"><ol class="am-timeline am-timeline--v"><li class="am-tl-item"><span class="am-tl-when">01</span><span class="am-tl-dot"></span><span class="am-tl-title">先确认灭菌工艺</span><span class="am-tl-text">明确方法、温度、压力、时长和重复次数。</span></li><li class="am-tl-item am-tl-item--hi"><span class="am-tl-when">02</span><span class="am-tl-dot"></span><span class="am-tl-title">借测一台二维码PDA</span><span class="am-tl-text">用20—30件代表性衣物验证读取和全操作耗时。</span></li><li class="am-tl-item"><span class="am-tl-when">03</span><span class="am-tl-dot"></span><span class="am-tl-title">按需做NFC对照</span><span class="am-tl-text">若二维码明显不便，再测10—20枚候选标签。</span></li><li class="am-tl-item"><span class="am-tl-when">04</span><span class="am-tl-dot"></span><span class="am-tl-title">OCR只做样本试验</span><span class="am-tl-text">先确认笔墨适用，再评估误识别和人工核对。</span></li><li class="am-tl-item"><span class="am-tl-when">05</span><span class="am-tl-dot"></span><span class="am-tl-title">同口径询价并确认</span><span class="am-tl-text">业务、QA和IT核对适用性后确定采购。</span></li></ol>
+<div class="am-panel-body"><ol class="am-timeline am-timeline--v"><li class="am-tl-item"><span class="am-tl-when">01</span><span class="am-tl-dot"></span><span class="am-tl-title">先确认灭菌工艺</span><span class="am-tl-text">明确方法、温度、压力、时长和重复次数。</span></li><li class="am-tl-item am-tl-item--hi"><span class="am-tl-when">02</span><span class="am-tl-dot"></span><span class="am-tl-title">借测一台二维码PDA</span><span class="am-tl-text">用20—30件代表性衣物验证读取和全操作耗时。</span></li><li class="am-tl-item"><span class="am-tl-when">03</span><span class="am-tl-dot"></span><span class="am-tl-title">按需做NFC对照</span><span class="am-tl-text">若二维码明显不便，再测10—20枚候选标签。</span></li><li class="am-tl-item"><span class="am-tl-when">04</span><span class="am-tl-dot"></span><span class="am-tl-title">用专用手机试验OCR</span><span class="am-tl-text">确认进区与笔墨适用，再测试拍摄、误识别和复核。</span></li><li class="am-tl-item"><span class="am-tl-when">05</span><span class="am-tl-dot"></span><span class="am-tl-title">同口径询价并确认</span><span class="am-tl-text">业务、QA和IT核对适用性后确定采购。</span></li></ol>
 <div class="am-md"><p>短期试验不能证明标签全寿命耐久性。
 已确认集中共用3点，并新制安装300个二维码。
 正式采购前需确认灭菌方式、标签材质和安装工艺。</p>
@@ -1190,26 +1205,26 @@ OCR可能读成另一件真实存在的编号。
 <p>本页已获授权公开预算，用于讨论和供应商沟通。
 它不是采购规格书；新增二维码单价仍为预算占位。
 尚未试用设备，也未完成材料工艺验证或正式系统验证。
-下一版应以现场试验及供应商书面报价更新。</p>
+下一版应以手机样机、现场试验及供应商书面报价更新。</p>
 </div></div>
 </section>
 </div>
 </div>
 </main>
-<footer class="am-colophon">Generated by <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" rel="noopener">Answer me with HTML</a> 0.5.0 · 2026-10-16 16:42 · <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" rel="noopener">★ Star on GitHub</a></footer>
+<footer class="am-colophon">Generated by <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" rel="noopener">Answer me with HTML</a> 0.5.0 · 2026-10-16 17:00 · <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" rel="noopener">★ Star on GitHub</a></footer>
 <textarea id="am-source" hidden readonly aria-hidden="true">---
 title: 两车间300套 · 实物识别方案
-subtitle: 新制安装300个二维码 · 全厂集中共用3个操作点
+subtitle: 300套 · 集中共用3点 · OCR改用3台专用手机
 template: doc
 theme: paper
 mode: light
 lang: zh
 style: 80
 日期: 2026-10-16
-版本: 集中三点口径 V1.2
+版本: 手机OCR口径 V1.3
 ---
 
-**一期推荐二维码＋带屏PDA。NFC备选，手写OCR仅作辅助。**
+**一期推荐二维码＋带屏PDA。NFC备选，手机OCR仅作辅助。**
 
 ## A 先看结论
 
@@ -1223,7 +1238,7 @@ NFC 作为条件性备选；手写 OCR 不作为一期主识别。
 |---|---|---|
 | 二维码＋PDA | ok 一期首选 | PDA自带屏幕；按全厂3点配置，统一新制标识 |
 | NFC刷卡 | warn 试验后再决定 | 要新增标签、终端和绑定管理 |
-| 手写编号＋OCR | warn 仅作辅助试验 | 笔便宜，成像、复核和验证并不省事 |
+| 手写编号＋手机OCR | warn 仅作辅助试验 | 手机可减少设备；字迹识别、复核和验证仍需投入 |
 
 **推荐前提：新制二维码及安装方式通过清洗、灭菌后的适用性验证。**
 
@@ -1236,7 +1251,8 @@ NFC 作为条件性备选；手写 OCR 不作为一期主识别。
 标识条件: 二维码或ID卡均随衣物清洗和灭菌
 NFC采购: 360枚，其中60枚为20%备用
 已确认点位: 全厂集中处理，共用3个操作点
-终端形态: 二维码用移动PDA；NFC/OCR按固定台
+终端形态: 二维码用PDA；NFC用固定台；OCR用专用手机
+OCR配置: 新购3台安卓手机，厂内服务器承担识别
 工艺状态: 灭菌方式和参数仍未确认
 人工费率: 1,500—2,500元/人天
 时间口径: 1人天为8小时，不是日历天
@@ -1260,7 +1276,7 @@ NFC耐工艺标签型号尚未确定，价格只是占位。
 |---|---|---:|
 | 二维码PDA | 3台PDA、新制300个二维码及固定材料 | **1.25—3.15** |
 | NFC刷卡 | 3套读卡设备及终端、360枚候选标签 | **1.75—3.89** |
-| 手写OCR | 3套成像设备及终端、补光和标识耗材 | **1.25—2.57** |
+| 手机OCR | 3台专用手机、支架补光、充电及标识耗材 | **0.80—1.97** |
 
 下面拆分全厂集中共用3点的采购预算。
 
@@ -1285,16 +1301,21 @@ NFC耐工艺标签型号尚未确定，价格只是占位。
 | 包装打印机及首批耗材 | 1套 | 2,500—6,500 |
 | **合计** | 普通卡不能替代工艺合格标签 | **17,500—38,900** |
 
-### OCR采购拆分
+### 手机OCR采购拆分
 
 | 项目 | 数量与单价假设 | 小计（元） |
 |---|---|---:|
-| 相机或成像模块 | 3套 × 500—1,500元 | 1,500—4,500 |
-| 操作终端 | 3台 × 2,500—4,000元 | 7,500—12,000 |
-| 补光和支架 | 3套 × 300—800元 | 900—2,400 |
+| 专用安卓手机 | 3台 × 1,500—3,500元 | 4,500—10,500 |
+| 补光和拍照支架 | 3套 × 200—500元 | 600—1,500 |
+| 充电及防护配件 | 1批 | 300—900 |
 | 标识笔及试验耗材占位 | 1批 | 100—300 |
 | 包装打印机及首批耗材 | 1套 | 2,500—6,500 |
-| **合计** | 不含工业视觉升级和额外计算设备 | **12,500—25,700** |
+| **合计** | 手机兼做相机和操作终端 | **8,000—19,700** |
+
+手机价格是普通商用设备的预算占位，不是洁净区准入结论。
+若报价已含充电配件，应扣除重复项目。
+与原相机加电脑方案相比，硬件预算低4,500—6,000元。
+这是估算区间端点之差，不是已验证的采购节省。
 
 **三种方案均只计1套包装设备，为2,500—6,500元。**
 若需要两套，三种方案都再加同样费用；无需新增则扣除。
@@ -1308,8 +1329,12 @@ NFC耐工艺标签型号尚未确定，价格只是占位。
 其中60枚是预算采用的备用量，不是额外衣物数。
 
 PDA自带屏幕和计算能力，不再重复买电脑。
-无屏扫码枪、NFC读卡器和普通相机均需配操作终端。
+手机OCR同时利用手机摄像头、屏幕和系统，不再采购相机及电脑。
+NFC固定读卡器仍需配套操作终端。
 如果NFC也要移动作业，应改报带屏NFC终端。
+
+手机也能扫二维码，但本页二维码方案仍按专业PDA报价。
+两种终端的扫描体验与洁净区适用性，应实机比较。
 
 ## D 识别功能开发和验证费用
 
@@ -1319,7 +1344,7 @@ PDA自带屏幕和计算能力，不再重复买电脑。
 |---|---:|---:|
 | 二维码PDA | **2—3** | **0.30—0.75** |
 | NFC刷卡 | **6—11** | **0.90—2.75** |
-| 手写OCR | **12—23** | **1.80—5.75** |
+| 手机OCR | **12—23** | **1.80—5.75** |
 
 - 二维码：开发2—3人天，适配PDA及扫码输入。
 - NFC：开发4—7人天，新增专项验证2—4人天。
@@ -1327,8 +1352,13 @@ PDA自带屏幕和计算能力，不再重复买电脑。
 
 二维码常规验证已计入共用系统验证，不是免验证。
 NFC增加读卡接入、电子ID绑定和换卡控制。
-OCR增加成像、识别部署、候选编号和人工复核。
+手机OCR增加拍照、图像上传、识别部署和人工复核。
+默认在厂内服务器识别，复用可用算力，不调用外部云OCR。
+若需新增推理服务器或商业许可，应另计费用。
+手机端独立推理属于另一技术路线，需单独评估。
 
+手机替代了相机和电脑，不替代OCR软件开发及验证。
+仍按一种安卓机型及浏览器估算，多平台兼容另估。
 OCR估算不含专用手写模型训练，也不承诺识别准确率。
 NFC若需非标准SDK或多种终端适配，应另估工作量。
 
@@ -1338,7 +1368,7 @@ NFC若需非标准SDK或多种终端适配，应另估工作量。
 |---|---:|
 | 二维码PDA | **1.55—3.90** |
 | NFC刷卡 | **2.65—6.64** |
-| 手写OCR | **3.05—8.32** |
+| 手机OCR | **2.60—7.72** |
 
 **本表不含共用系统开发，也未加15%人天预留。**
 
@@ -1347,15 +1377,15 @@ NFC若需非标准SDK或多种终端适配，应另估工作量。
 
 ## E 优缺点和实物风险
 
-| 维度 | 二维码PDA | NFC刷卡 | 手写OCR |
+| 维度 | 二维码PDA | NFC刷卡 | 手机OCR |
 |---|---|---|---|
 | 标识配置 | 新制并安装300个二维码 | 新增电子标签和绑定 | 新增书写及维护规则 |
 | 操作要求 | 露出并对准二维码 | 将正确标签靠近读区 | 找字迹、摊平、拍照、复核 |
-| 优点 | 接入较直接，PDA可移动 | 不依赖可见字符清晰度 | 人眼可读，不需电子芯片 |
-| 主要局限 | 褶皱、污损、褪色及遮挡 | 标签耐工艺、互换/脱落、读卡接入 | 字迹差异、光照、褪色及误识别 |
+| 优点 | 接入较直接，PDA可移动 | 不依赖可见字符清晰度 | 手机可移动，兼做拍照和操作终端 |
+| 主要局限 | 褶皱、污损、褪色及遮挡 | 标签耐工艺、互换/脱落、读卡接入 | 字迹差异、手持角度、光照及误识别 |
 | 隔袋读取 | 需透视读码或绑定外包装码 | 可能可读，须实测包装和读区 | 看不见字迹就无法识别 |
 | H5接入 | 优先键盘式扫码输出 | 取决于读卡器、协议和软件接口 | 网页拍照后还需识别和业务校验 |
-| 后续维护 | 补标、电池、设备清洁 | 换标、绑定核对、驱动或SDK | 补写、成像条件、模型及复核规则 |
+| 后续维护 | 补标、电池、设备清洁 | 换标、绑定核对、驱动或SDK | 手机清洁、成像条件、模型及复核规则 |
 
 ```callout warn “识别成功”不等于“识别了正确实物”
 NFC卡可能挂错衣服。
@@ -1365,6 +1395,9 @@ OCR可能读成另一件真实存在的编号。
 ```
 
 ### 清洗和灭菌是共同约束
+
+标识随衣物灭菌，手机不随衣物灭菌。
+QA需确认手机进区、清洁消毒及戴手套操作是否可行。
 
 普通PVC卡、普通NFC贴纸不能默认耐反复灭菌。
 标签的芯片、封装、天线和固定材料应一起验证。
@@ -1393,14 +1426,15 @@ OCR可能读成另一件真实存在的编号。
 |---|---:|---:|
 | 二维码PDA | 72—107 | **12.05—29.90** |
 | NFC＋新终端 | 76—117 | **13.15—33.14** |
-| OCR＋新终端 | 83—130 | **13.70—35.07** |
+| 手机OCR | 83—130 | **13.25—34.47** |
 
 项目预算＝含预留的人天费用＋硬件采购。
 二维码安装人工及材料工艺试验尚待询价，未计入总额。
 
 **本表已经包含前面的识别工作和硬件，不要再次相加。**
 
-未计新增服务器、网络施工、特殊机型和额外许可。
+未计新增后台或OCR推理服务器、网络施工及额外许可。
+特殊可消毒手机或更高防护等级设备需重新报价。
 材料工艺试验、现场人员工时、税运差旅也需另核实。
 报价区间重叠，最终应按相同范围比较供应商报价。
 
@@ -1423,7 +1457,7 @@ OCR可能读成另一件真实存在的编号。
 01 | 先确认灭菌工艺 | 明确方法、温度、压力、时长和重复次数。
 *02 | 借测一台二维码PDA | 用20—30件代表性衣物验证读取和全操作耗时。
 03 | 按需做NFC对照 | 若二维码明显不便，再测10—20枚候选标签。
-04 | OCR只做样本试验 | 先确认笔墨适用，再评估误识别和人工核对。
+04 | 用专用手机试验OCR | 确认进区与笔墨适用，再测试拍摄、误识别和复核。
 05 | 同口径询价并确认 | 业务、QA和IT核对适用性后确定采购。
 ```
 
@@ -1451,7 +1485,7 @@ OCR可能读成另一件真实存在的编号。
 本页已获授权公开预算，用于讨论和供应商沟通。
 它不是采购规格书；新增二维码单价仍为预算占位。
 尚未试用设备，也未完成材料工艺验证或正式系统验证。
-下一版应以现场试验及供应商书面报价更新。
+下一版应以手机样机、现场试验及供应商书面报价更新。
 </textarea>
 <script>
 (() => {
