@@ -1,4 +1,4 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer"><meta name="theme-color" content="#123d35"><title>业务需求说明书 · 净循</title><link rel="stylesheet" href="share.css"></head><body><header class="top"><a class="logo" href="index.html"><span>净</span>净循 <small>CLEANROOM TRACE</small></a><nav aria-label="站点导航"><a href="demo.html">交互演示</a><a href="business.html">业务需求</a><a href="functional.html">功能说明</a></nav></header><div class="doc-title"><div class="eyebrow">DOCUMENT / V0.1</div><h1>业务需求说明书</h1><p>面向业务、QA与需求评审 · 调研基线版 · 待评审</p></div><div class="doc-layout"><aside class="toc"><h2>文档目录</h2><details open><summary>展开 / 收起</summary><a class="level-2" href="#section-1">2026-10-19 补充确认：接收检查与完整记录</a><a class="level-2" href="#section-2">1. 文档目的与评审方式</a><a class="level-2" href="#section-3">2. 业务背景、问题和目标</a><a class="level-2" href="#section-4">3. 已知事实、建议与待确认信息</a><a class="level-3" href="#section-5">3.1 用户已确认的前提</a><a class="level-3" href="#section-6">3.2 当前建议，尚待现场批准</a><a class="level-3" href="#section-7">3.3 当前Demo的定位</a><a class="level-2" href="#section-8">4. 范围与边界</a><a class="level-3" href="#section-9">4.1 一期建议范围</a><a class="level-3" href="#section-10">4.2 有条件纳入</a><a class="level-3" href="#section-11">4.3 暂不包含在基础估算中</a><a class="level-2" href="#section-12">5. 术语及管理对象</a><a class="level-2" href="#section-13">6. 目标流程与岗位职责</a><a class="level-3" href="#section-14">6.1 总体流程示意</a><a class="level-3" href="#section-15">6.2 建议角色矩阵</a><a class="level-2" href="#section-16">7. 业务需求清单与覆盖核对</a><a class="level-2" href="#section-17">8. 关键业务规则</a><a class="level-3" href="#section-18">8.1 次数与批次</a><a class="level-3" href="#section-19">8.2 寿命、保存期及状态</a><a class="level-3" href="#section-20">8.3 包装及交接</a><a class="level-3" href="#section-21">8.4 质量记录与补录</a><a class="level-2" href="#section-22">9. 报表与业务数据口径</a><a class="level-2" href="#section-23">10. 建议验收场景</a><a class="level-2" href="#section-24">11. 待调研事项和决策台账</a><a class="level-2" href="#section-25">12. 上线和验收前提</a><a class="level-2" href="#section-26">13. 实施沟通</a><a class="level-2" href="#section-27">14. 评审记录与后续修订</a><a class="level-2" href="#section-28">15. 参考资料</a></details><a class="back-top" href="#top">↑ 回到顶部</a></aside><main id="top" class="document"><div class="notice">本页为分享版。区分已确认目标、设计建议、待调研事项与 Demo 已实现范围；不代表正式系统已经完成 GMP 验证。商务费用及未列入分享的附件不在此页面公开。</div><h1>洁净服与鞋套追溯系统业务需求说明书</h1>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer"><meta name="theme-color" content="#123d35"><title>业务需求说明书 · 净循</title><link rel="stylesheet" href="share.css"></head><body><header class="top"><a class="logo" href="index.html"><span>净</span>净循 <small>CLEANROOM TRACE</small></a><nav aria-label="站点导航"><a href="demo.html">交互演示</a><a href="business.html">业务需求</a><a href="functional.html">功能说明</a></nav></header><div class="doc-title"><div class="eyebrow">DOCUMENT / V0.1</div><h1>业务需求说明书</h1><p>面向业务、QA与需求评审 · 调研基线版 · 待评审</p></div><div class="doc-layout"><aside class="toc"><h2>文档目录</h2><details open><summary>展开 / 收起</summary><a class="level-2" href="#section-1">2026-10-19 最新确认：自然月灭菌及破损处置</a><a class="level-2" href="#section-2">2026-10-19 补充确认：接收检查与完整记录</a><a class="level-2" href="#section-3">1. 文档目的与评审方式</a><a class="level-2" href="#section-4">2. 业务背景、问题和目标</a><a class="level-2" href="#section-5">3. 已知事实、建议与待确认信息</a><a class="level-3" href="#section-6">3.1 用户已确认的前提</a><a class="level-3" href="#section-7">3.2 当前建议，尚待现场批准</a><a class="level-3" href="#section-8">3.3 当前Demo的定位</a><a class="level-2" href="#section-9">4. 范围与边界</a><a class="level-3" href="#section-10">4.1 一期建议范围</a><a class="level-3" href="#section-11">4.2 有条件纳入</a><a class="level-3" href="#section-12">4.3 暂不包含在基础估算中</a><a class="level-2" href="#section-13">5. 术语及管理对象</a><a class="level-2" href="#section-14">6. 目标流程与岗位职责</a><a class="level-3" href="#section-15">6.1 总体流程示意</a><a class="level-3" href="#section-16">6.2 建议角色矩阵</a><a class="level-2" href="#section-17">7. 业务需求清单与覆盖核对</a><a class="level-2" href="#section-18">8. 关键业务规则</a><a class="level-3" href="#section-19">8.1 次数与批次</a><a class="level-3" href="#section-20">8.2 寿命、保存期及状态</a><a class="level-3" href="#section-21">8.3 包装及交接</a><a class="level-3" href="#section-22">8.4 质量记录与补录</a><a class="level-2" href="#section-23">9. 报表与业务数据口径</a><a class="level-2" href="#section-24">10. 建议验收场景</a><a class="level-2" href="#section-25">11. 待调研事项和决策台账</a><a class="level-2" href="#section-26">12. 上线和验收前提</a><a class="level-2" href="#section-27">13. 实施沟通</a><a class="level-2" href="#section-28">14. 评审记录与后续修订</a><a class="level-2" href="#section-29">15. 参考资料</a></details><a class="back-top" href="#top">↑ 回到顶部</a></aside><main id="top" class="document"><div class="notice">本页为分享版。区分已确认目标、设计建议、待调研事项与 Demo 已实现范围；不代表正式系统已经完成 GMP 验证。商务费用及未列入分享的附件不在此页面公开。</div><h1>洁净服与鞋套追溯系统业务需求说明书</h1>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -39,7 +39,18 @@
 <td>调研结果按本文件BR编号、TD编号补充；不把未决项默认视为客户同意</td>
 </tr>
 </tbody></table></div>
-<h2 id="section-1">2026-10-19 补充确认：接收检查与完整记录</h2>
+<h2 id="section-1">2026-10-19 最新确认：自然月灭菌及破损处置</h2>
+<p>本节替代下文关于“破损后续处置未确认”的旧描述。此前表单字段和打印需求保持有效。</p>
+<ul>
+<li>衣服、工作鞋及洁净鞋套暂按每个自然月至少灭菌一次管理，使用北京时间，不按滚动 30 天计算。</li>
+<li>当月无已放行的合格灭菌记录时提醒，并禁止发放。灭菌累计次数、失败循环及仅有上月记录不能代替本月合格记录。月度资格依据实际灭菌完成时间，不以放行日期跨月替代。</li>
+<li>月度资格、灭菌保存有效期、QA 放行及寿命上限分别校验。月初无当月合格记录即拦截，但不将已经发放的物品自动登记回收。</li>
+<li>清洗前或清洗后发现破损，保留逐件检查及编号；按现有 QA 处置入口选择报废或返厂维修，填写原因，保留操作人和时间。两种状态均禁止发放。</li>
+<li>返厂维修返回、修复检查、重新投入使用的流程本版暂不体现。不得用“重新清洗”绕过破损处置。</li>
+<li>查询、打印每件衣服或每双鞋的灭菌次数、日期、操作人、结果和关联批次，额外显示本月资格。旧记录缺少当月证据时提示，不自动补造。</li>
+<li>效率页仍比较一次清洗检查与记录操作，不将其直接乘 12 当作全年灭菌节省。300 套全年均在用时，仅灭菌最低计划量为 3,600 套次/年；鞋类数量、额外灭菌、清洗频率及灭菌登记工时需另行测量。月度要求不等于每月只清洗一次。</li>
+</ul>
+<h2 id="section-2">2026-10-19 补充确认：接收检查与完整记录</h2>
 <p>本节为用户本次确认后的增量。与下方 V0.1 历史基线冲突时，以本节为本次 Demo 口径；正式 URS 仍须企业评审批准。</p>
 <div class="table-scroll"><table>
 <thead>
@@ -79,17 +90,17 @@
 <p><strong>破损后续处置未确认。</strong> Demo 暂以“破损待处置”保留异常编号，不加入本次清洗执行成员，不自动报废、返修或放行。这是避免演示继续执行未知流程的临时行为，不是已批准的处置制度。后续需根据用户补充调整。</p>
 <p>新建工作鞋、洁净鞋套按双管理。旧版“鞋套（只）”档案保留原单位，不自动合并成双。旧清洗记录缺失字段显示“未记录”；历史灭菌累计缺少逐次明细时明确提示，不补造日期或操作人。</p>
 <p>效率按“共同现场操作时间＋记录时间”比较。逐件检查、整理和每批清洁工作在手工及系统方案中均保留。300 套示例采用共同现场工时 150 分钟，记录耗时手工/二维码/NFC/手机 OCR 分别为 150/40/30/75 分钟，总工时为 300/190/180/225 分钟。所有参数均待实测；设备运行、QA 审核及未知破损处置不纳入。原预算保留，新增功能的正式开发与验证增量待估算。</p>
-<h2 id="section-2">1. 文档目的与评审方式</h2>
+<h2 id="section-3">1. 文档目的与评审方式</h2>
 <p>本文用于回答“系统要解决什么问题、覆盖哪些业务、由谁操作、怎样判断需求满足”。它是需求沟通底稿，可在调研后转换为企业受控URS。开发实现细节见配套功能说明书。</p>
 <p>建议评审时逐条阅读第7章BR需求表，并在“业务确认”栏填写：同意／调整／不适用／后续阶段，记录意见、确认人和日期。所有需求当前都尚未完成企业正式批准；表中的“确认目标”仅表示用户已明确提出该目标。</p>
 <p>两份文档采用同一套编号：BR为业务需求、F为功能模块、AC为建议验收场景、TD为本次待决事项。原有调研问题Q01—Q33保持不变。原调研资料中的URS-01—URS-09是概括性示例，不与本文件BR编号混用；正式URS编号由企业受控文档程序确定。</p>
-<h2 id="section-3">2. 业务背景、问题和目标</h2>
+<h2 id="section-4">2. 业务背景、问题和目标</h2>
 <p>目前约100多件洁净服、洁净鞋套，清洗频繁，清洗、灭菌和发放需要人工填写记录，存在工作量大、漏记、错记及事后补记困难等问题。已有二维码，希望通过手持设备和H5界面识别单件，自动形成处理历史及累计次数。</p>
 <p>业务目标：减少逐件重复抄写和人工累计；追溯每件物品及其所属处理批次；按经批准规则预警和阻断不合格发放；保留更正证据；支持车间、批次、年份统计和检查；正式系统支持GMP计算机化系统验证及受控运行。</p>
 <p>“自动记录”的边界：识别、关联、计算和校验自动完成；现场装载、工序实际完成、原始结果核对、包装检查和交接仍需人员履责。只有设备接口确实可用且经过验证时，才能减少对应的手工确认。扫描到二维码不证明已经清洗或灭菌合格。</p>
 <p>建议上线后评价指标，数值由调研确定：每批记录耗时、每件识别耗时、台账缺项率、实物与系统差异、重复记录次数、异常闭环时间和追溯查询耗时。不在未测量现状时承诺节省百分比。</p>
-<h2 id="section-4">3. 已知事实、建议与待确认信息</h2>
-<h3 id="section-5">3.1 用户已确认的前提</h3>
+<h2 id="section-5">3. 已知事实、建议与待确认信息</h2>
+<h3 id="section-6">3.1 用户已确认的前提</h3>
 <ul>
 <li>行业为制药，使用场景为GMP车间、内部使用。</li>
 <li>管理对象为洁净服与洁净鞋套，共100多件，已有二维码。</li>
@@ -98,7 +109,7 @@
 <li>计划采购手持扫码设备，业务界面希望采用H5。</li>
 <li>当前先交付无后台数据库的可点击Demo，允许新增假数据；后续正式系统需要支持系统验证。</li>
 </ul>
-<h3 id="section-6">3.2 当前建议，尚待现场批准</h3>
+<h3 id="section-7">3.2 当前建议，尚待现场批准</h3>
 <ul>
 <li>单厂区先落地，复用衣物二维码，优先借测带屏安卓PDA。</li>
 <li>按批次登记共同信息，记录实际成员，完成工序后逐件累计。</li>
@@ -108,18 +119,18 @@
 <li>失败的完整循环仍保留物理处理次数，中止循环单独评估。</li>
 </ul>
 <p>“内部使用”不等于已确认洗涤、灭菌全部在内部执行；系统部署方式、区域划分、实际岗位、服装路线、灭菌方式、鞋套单位、现场二维码格式和阈值均待调研。</p>
-<h3 id="section-7">3.3 当前Demo的定位</h3>
+<h3 id="section-8">3.3 当前Demo的定位</h3>
 <p>现有Demo是可操作的需求样例，不是生产系统。它支持新增物品、模拟扫码、批次、封包、放行、发放回收、预警、模拟审计和CSV导出；没有真实身份认证、电子签名、服务端数据库、设备接口、可信时间源或防篡改审计。</p>
 <p>其中80次预警、100次更换、730天寿命、7天灭菌保存期仅是示例。不能作为行业标准、采购参数或现场SOP。</p>
-<h2 id="section-8">4. 范围与边界</h2>
-<h3 id="section-9">4.1 一期建议范围</h3>
+<h2 id="section-9">4. 范围与边界</h2>
+<h3 id="section-10">4.1 一期建议范围</h3>
 <p>物品档案与初始基线、二维码识别、回收、清洗批次、检查包装、灭菌批次、审核放行、发放、累计次数、生命周期规则、异常隔离及报废、更正审批、单件和批次追溯、台账及统计导出、账号权限、审计追踪、记录保留、备份恢复与验证支持。</p>
 <p>采购批次、洗涤批次、灭菌批次分别管理。生产批次是否关联、如何关联，需另行确认，不能把“按批次统计”直接理解为已经覆盖生产批次追溯。</p>
-<h3 id="section-10">4.2 有条件纳入</h3>
+<h3 id="section-11">4.2 有条件纳入</h3>
 <p>电子签名的触发点与形式、无需灭菌路线、发放次数上限、部分批次放行、原始记录文件上传、标签打印、委外交接和人员主数据接口，按调研结论确认一期具体范围。正式质量记录所需的控制不能仅以Demo未实现为由排除。</p>
-<h3 id="section-11">4.3 暂不包含在基础估算中</h3>
+<h3 id="section-12">4.3 暂不包含在基础估算中</h3>
 <p>RFID、自动发衣柜、门禁联动、多厂区、离线审批及发放、设备自动控制、PLC改造、复杂MES/ERP双向集成、企业CA/PKI建设、灭菌工艺和服装材料本身的确认研究。新增时须评估范围、风险、验证和费用。</p>
-<h2 id="section-12">5. 术语及管理对象</h2>
+<h2 id="section-13">5. 术语及管理对象</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -185,8 +196,8 @@
 </tr>
 </tbody></table></div>
 <p>发放次数不等于实际穿用次数、进入洁净区次数或穿用时长。若要这些指标，应增加真实采集环节。</p>
-<h2 id="section-13">6. 目标流程与岗位职责</h2>
-<h3 id="section-14">6.1 总体流程示意</h3>
+<h2 id="section-14">6. 目标流程与岗位职责</h2>
+<h3 id="section-15">6.1 总体流程示意</h3>
 <p><img src="lifecycle.png" alt="流程01-洁净服与鞋套生命周期管理"></p>
 <p>此图表示建议的含灭菌路线，不是厂区物理布局；图中共用阶段背景不表示人员、设备可以跨越洁污区。正式路线以Q01—Q03、Q08调研为准。</p>
 <div class="table-scroll"><table>
@@ -238,7 +249,7 @@
 <td>重处理或报废；不清空已有物理处理历史</td>
 </tr>
 </tbody></table></div>
-<h3 id="section-15">6.2 建议角色矩阵</h3>
+<h3 id="section-16">6.2 建议角色矩阵</h3>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -279,7 +290,7 @@
 </tr>
 </tbody></table></div>
 <p>Demo只有操作员、QA和管理员三个可切换的模拟身份；正式矩阵不能照搬为“下拉框切换角色”。</p>
-<h2 id="section-16">7. 业务需求清单与覆盖核对</h2>
+<h2 id="section-17">7. 业务需求清单与覆盖核对</h2>
 <p>来源标记：“目标”＝用户明确目标；“补充”＝为实现流程和GMP受控运行提出的建议；“条件”＝须调研确定范围。Demo标记仅表示演示覆盖，不代表正式实现或验证通过。业务确认栏预留供客户逐条评审。</p>
 <div class="table-scroll"><table>
 <thead>
@@ -614,8 +625,8 @@
 </tr>
 </tbody></table></div>
 <p>若评审发现遗漏，在最后追加新BR编号，不重编号已经引用的需求；删除范围时保留编号和排除理由。</p>
-<h2 id="section-17">8. 关键业务规则</h2>
-<h3 id="section-18">8.1 次数与批次</h3>
+<h2 id="section-18">8. 关键业务规则</h2>
+<h3 id="section-19">8.1 次数与批次</h3>
 <ul>
 <li>物品扫描加入批次时不加次数，工序实际发生并确认后才记对应事件。</li>
 <li>一批20件各处理一次，形成20个处理件次；共同参数记录一次，逐件可回溯。</li>
@@ -625,18 +636,18 @@
 <li>真实重洗/重灭菌使用新事件，不因“同一天”“同一件”而被去重。</li>
 <li>已真实发生的处理，不能通过撤销单据抹掉；误登记通过受控更正调整有效统计口径。</li>
 </ul>
-<h3 id="section-19">8.2 寿命、保存期及状态</h3>
+<h3 id="section-20">8.2 寿命、保存期及状态</h3>
 <p>需同时管理业务状态、寿命状态、使用资格。寿命正常不能证明本次灭菌仍有效；本次保存期有效也不能覆盖已达寿命上限、破损或隔离。</p>
 <p>显示至少包括：投用日期及起算依据、已用时长、最近实际清洗/灭菌时间、本次保存到期、寿命到期或剩余条件、当前三个累计次数及异常原因。若缺少可信起算信息，显示未知而非虚构日期。</p>
 <p>寿命上限来源于服装/鞋套型号、材质、适用工艺和经批准依据。发放次数是否也构成寿命限制按SOP确认，不能因为有发放计数就默认有强制发放上限。</p>
 <p>本次灭菌到期通常基于经批准起算点与保存时长；晚审核和晚补录不得自动延期。清洗后等待时限、开包和储存异常失效按现场要求配置。恢复有效资格必须完成规定处理，不允许直接手改日期绕过。</p>
-<h3 id="section-20">8.3 包装及交接</h3>
+<h3 id="section-21">8.3 包装及交接</h3>
 <p>封包前绑定每件与包装外码；封包成员冻结。拆包和重包形成新的有效关联，历史仍可查。不能为了识别标签破坏无菌屏障。</p>
 <p>若封包一袋多件，发放应按完整包装交接；若业务允许拆分，需要受控开包/重新处理路线并重新判断剩余物品资格。不能扫描单件后假定袋内其他物品仍维持原无菌状态。</p>
-<h3 id="section-21">8.4 质量记录与补录</h3>
+<h3 id="section-22">8.4 质量记录与补录</h3>
 <p>更正申请包括原记录、拟改值、理由、实际时间、录入时间、证据及审批信息。批准前不改有效业务值，批准时检查是否已被其他操作更新。改动可能影响已发放资格时，应生成复核/追溯待办。</p>
 <p>任何“取消人工填写”的切换必须经过验证、SOP及质量批准。电子记录为主记录后，受控应急纸单及补录仍需明确责任。</p>
-<h2 id="section-22">9. 报表与业务数据口径</h2>
+<h2 id="section-23">9. 报表与业务数据口径</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -688,7 +699,7 @@
 </tbody></table></div>
 <p>业务年份按实际业务时间及约定时区计算；另保留录入日期。报表保留事件发生时的车间，不能因后续调拨或主档更正而无痕改写历史。对于本来记录错误的历史车间，由受控更正明确影响的事件版本。</p>
 <p>导出格式当前Demo为CSV，正式是否需要原生Excel、PDF和固定签批版式待确认。原生Excel/PDF不是当前已实现能力。</p>
-<h2 id="section-23">10. 建议验收场景</h2>
+<h2 id="section-24">10. 建议验收场景</h2>
 <p>以下为验收意图，不是已批准测试脚本或已执行的OQ/PQ。正式脚本需补充环境、测试数据、步骤、预期证据、执行人与复核签名。</p>
 <div class="table-scroll"><table>
 <thead>
@@ -849,7 +860,7 @@
 <td>追溯覆盖关键需求，偏差关闭或批准残留风险，质量批准后切换</td>
 </tr>
 </tbody></table></div>
-<h2 id="section-24">11. 待调研事项和决策台账</h2>
+<h2 id="section-25">11. 待调研事项和决策台账</h2>
 <p>详细访谈问题见现场调研与系统验证清单（配套资料另行提供）。本节按会影响设计的决策汇总；当前均未确认，负责人为建议责任部门，不是已作个人承诺。</p>
 <div class="table-scroll"><table>
 <thead>
@@ -992,12 +1003,12 @@
 </tr>
 </tbody></table></div>
 <p>TD-01—TD-10中的关键工艺、规则及设备问题未关闭前，不应冻结对应详细设计；接口、基础设施和验证费用也需在固定报价前确认。</p>
-<h2 id="section-25">12. 上线和验收前提</h2>
+<h2 id="section-26">12. 上线和验收前提</h2>
 <p>正式上线至少需要：批准业务范围和关键规则；确认主数据及基线；确定岗位权限与电子记录责任；完成实际设备/网络试验；完成风险评估、验证计划、设计及追溯矩阵；执行批准范围内的IQ/OQ/PQ或企业等效验证；处理偏差；验证恢复与应急；完成SOP、培训和切换批准。</p>
 <p>监管适用性由企业QA按产品、市场和质量体系确定。本文不替代法规适用性评估，不据此声称“已符合GMP”。服装、包装和灭菌工艺的确认与计算机化系统验证是不同的责任范围。</p>
-<h2 id="section-26">13. 实施沟通</h2>
+<h2 id="section-27">13. 实施沟通</h2>
 <p>建议按现场调研、需求评审、设计、开发、验证及受控切换的顺序推进。商务估算不在本次分享范围内。</p>
-<h2 id="section-27">14. 评审记录与后续修订</h2>
+<h2 id="section-28">14. 评审记录与后续修订</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -1039,7 +1050,7 @@
 </tr>
 </tbody></table></div>
 <p>调研后先更新事实与决策，再同步业务需求、功能说明和验收对应关系；重大范围变化重新估算，不仅改界面。评审通过后形成新版本并保留本调研基线，未决项保留责任人与截止日期。</p>
-<h2 id="section-28">15. 参考资料</h2>
+<h2 id="section-29">15. 参考资料</h2>
 <ul>
 <li><a href="functional.html">功能说明书-调研基线版</a>：功能、数据、状态、接口和需求追溯。</li>
 <li><a href="index.html#guide">演示使用说明</a>：当前Demo真实功能与限制。</li>

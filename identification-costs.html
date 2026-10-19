@@ -765,7 +765,7 @@ html[data-theme="paper"] .am-md table { font-family: var(--font-sans); }
 <p>范围包括档案、批次、计数、放行、权限、审计、报表和恢复验证。</p>
 <p>完整项目已含共用工作、方案专属工作、15%人工预留和硬件。<strong>不能重复相加。</strong></p>
 </div>
-<div class="am-callout am-callout--warn" role="note"><div class="am-callout-title">金额沿用前版，新增逐件检查和打印的开发增量待估算</div><div class="am-callout-body am-md"><p>费率1,500—2,500元/人天；二维码常规验证已在共用范围。
+<div class="am-callout am-callout--warn" role="note"><div class="am-callout-title">金额沿用前版，新增检查、打印及月度拦截的开发增量待估算</div><div class="am-callout-body am-md"><p>费率1,500—2,500元/人天；二维码常规验证已在共用范围。
 硬件均含1套包装打印设备及首批耗材。*NFC含60枚备用标签。
 未计二维码安装人工、材料工艺试验、新服务器、网络、额外许可及税运差旅。</p>
 </div></div></div>
@@ -807,9 +807,9 @@ html[data-theme="paper"] .am-md table { font-family: var(--font-sans); }
   <div class="eff-row" data-key="nfc"><div class="eff-label"><b>NFC刷卡</b><label><input id="time-nfc" type="number" min="0.1" max="300" step="0.1" value="6" aria-label="NFC每套记录秒数"> 秒/套</label></div><div class="bar"><span></span></div><div class="eff-result"><strong></strong><small></small></div></div>
   <div class="eff-row" data-key="ocr"><div class="eff-label"><b>手机OCR</b><label><input id="time-ocr" type="number" min="0.1" max="300" step="0.1" value="15" aria-label="OCR每套记录秒数"> 秒/套</label></div><div class="bar"><span></span></div><div class="eff-result"><strong></strong><small></small></div></div>
   <p id="eff-warning" role="alert" hidden>记录秒数需为0.1—300；现场动作输入需为0—10000。</p>
-  <p class="eff-note">总＝现场＋300套×记录秒数÷60。示例非实测。<br>记录含批次填写/打印分摊；未计设备运行、QA审核及未定破损处置。</p>
+  <p class="eff-note">总＝现场＋300套×记录秒数÷60。示例非实测。<br>记录含批次填写/打印分摊；未计设备运行、QA审核及破损处置。</p>
 </div>
-<div class="am-callout am-callout--info" role="note"><div class="am-callout-title">实测后再决定采购</div><div class="am-callout-body am-md"><p>按完整清洗记录试测20—30套：现场动作、批次填写、逐件填写和打印分别计时。
+<div class="am-callout am-callout--info" role="note"><div class="am-callout-title">实测后再决定采购</div><div class="am-callout-body am-md"><p>每自然月至少灭菌1次，无当月合格放行记录禁止发放。本页为一次清洗检查工时，不直接年化。
 不得把环境清洁、破损检查、整理等算作系统省掉的时间。</p>
 </div></div>
 <style>
@@ -907,7 +907,7 @@ style: 80
 
 完整项目已含共用工作、方案专属工作、15%人工预留和硬件。**不能重复相加。**
 
-```callout warn 金额沿用前版，新增逐件检查和打印的开发增量待估算
+```callout warn 金额沿用前版，新增检查、打印及月度拦截的开发增量待估算
 费率1,500—2,500元/人天；二维码常规验证已在共用范围。
 硬件均含1套包装打印设备及首批耗材。*NFC含60枚备用标签。
 未计二维码安装人工、材料工艺试验、新服务器、网络、额外许可及税运差旅。
@@ -933,12 +933,12 @@ style: 80
   &lt;div class=&quot;eff-row&quot; data-key=&quot;nfc&quot;&gt;&lt;div class=&quot;eff-label&quot;&gt;&lt;b&gt;NFC刷卡&lt;/b&gt;&lt;label&gt;&lt;input id=&quot;time-nfc&quot; type=&quot;number&quot; min=&quot;0.1&quot; max=&quot;300&quot; step=&quot;0.1&quot; value=&quot;6&quot; aria-label=&quot;NFC每套记录秒数&quot;&gt; 秒/套&lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;bar&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;eff-result&quot;&gt;&lt;strong&gt;&lt;/strong&gt;&lt;small&gt;&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;
   &lt;div class=&quot;eff-row&quot; data-key=&quot;ocr&quot;&gt;&lt;div class=&quot;eff-label&quot;&gt;&lt;b&gt;手机OCR&lt;/b&gt;&lt;label&gt;&lt;input id=&quot;time-ocr&quot; type=&quot;number&quot; min=&quot;0.1&quot; max=&quot;300&quot; step=&quot;0.1&quot; value=&quot;15&quot; aria-label=&quot;OCR每套记录秒数&quot;&gt; 秒/套&lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;bar&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;eff-result&quot;&gt;&lt;strong&gt;&lt;/strong&gt;&lt;small&gt;&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;
   &lt;p id=&quot;eff-warning&quot; role=&quot;alert&quot; hidden&gt;记录秒数需为0.1—300；现场动作输入需为0—10000。&lt;/p&gt;
-  &lt;p class=&quot;eff-note&quot;&gt;总＝现场＋300套×记录秒数÷60。示例非实测。&lt;br&gt;记录含批次填写/打印分摊；未计设备运行、QA审核及未定破损处置。&lt;/p&gt;
+  &lt;p class=&quot;eff-note&quot;&gt;总＝现场＋300套×记录秒数÷60。示例非实测。&lt;br&gt;记录含批次填写/打印分摊；未计设备运行、QA审核及破损处置。&lt;/p&gt;
 &lt;/div&gt;
 ```
 
 ```callout info 实测后再决定采购
-按完整清洗记录试测20—30套：现场动作、批次填写、逐件填写和打印分别计时。
+每自然月至少灭菌1次，无当月合格放行记录禁止发放。本页为一次清洗检查工时，不直接年化。
 不得把环境清洁、破损检查、整理等算作系统省掉的时间。
 ```
 
