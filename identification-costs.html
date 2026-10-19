@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="zh-CN" data-theme="paper" data-mode="light" data-style="80">
+<html lang="zh-CN" data-theme="shadcn" data-mode="light" data-style="80">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Answer me with HTML 0.5.0">
-<title>两车间300套 · 实物识别方案</title>
+<title>洁净服识别方案 · 两页摘要</title>
 <style>
 html[data-theme="blueprint"], html[data-theme="blueprint"][data-mode="light"] {
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -719,773 +719,288 @@ html[data-theme="paper"] .am-md table { font-family: var(--font-sans); }
 </style>
 </head>
 <body>
-<div class="am-toolbar" data-am-root-lang="zh-CN" data-am-root-theme="paper" data-am-root-mode="light" data-am-root-style="80">
-<label class="am-pick">主题<select data-am="theme"><option value="blueprint">图纸</option><option value="shadcn">卡片</option><option value="paper" selected>纸张</option></select></label>
+<div class="am-toolbar" data-am-root-lang="zh-CN" data-am-root-theme="shadcn" data-am-root-mode="light" data-am-root-style="80">
+<label class="am-pick">主题<select data-am="theme"><option value="blueprint">图纸</option><option value="shadcn" selected>卡片</option><option value="paper">纸张</option></select></label>
 <label class="am-pick">明暗<select data-am="mode"><option value="auto">跟随系统</option><option value="light" selected>亮</option><option value="dark">暗</option></select></label>
 <button class="am-btn am-btn--reply" type="button" data-am="reply" data-ui="{&quot;button&quot;:&quot;回复&quot;,&quot;comment&quot;:&quot;评论&quot;,&quot;commentHint&quot;:&quot;对这个面板的意见&quot;,&quot;title&quot;:&quot;你的回复&quot;,&quot;hint&quot;:&quot;复制后粘贴到对话里。&quot;,&quot;copy&quot;:&quot;复制回复&quot;,&quot;close&quot;:&quot;关闭&quot;,&quot;suggested&quot;:&quot;建议&quot;,&quot;empty&quot;:&quot;先选择选项，或在面板上写评论。&quot;,&quot;decisions&quot;:&quot;决定&quot;,&quot;comments&quot;:&quot;评论&quot;,&quot;confirmed&quot;:&quot;确认了建议&quot;,&quot;untouched&quot;:&quot;未作答，保留建议&quot;,&quot;was&quot;:&quot;原为&quot;,&quot;typed&quot;:&quot;以 \&quot;&gt;\&quot; 开头的行是读者输入的文字。&quot;,&quot;done&quot;:&quot;已复制 ✓&quot;}">回复</button>
 <button class="am-btn" type="button" data-am="copy" data-done="已复制 ✓">复制源稿</button>
 </div>
 <main class="am-doc">
-<header class="am-head"><h1>两车间300套 · 实物识别方案</h1><p class="am-sub">300套 · 集中共用3点 · OCR改用3台专用手机</p><div class="am-head-meta"><span><b>日期</b>2026-10-16</span><span><b>版本</b>手机OCR口径 V1.3</span></div><div class="am-intro am-md"><div class="am-md"><p><strong>一期推荐二维码＋带屏PDA。NFC备选，手机OCR仅作辅助。</strong></p>
-</div></div></header>
-<div class="am-doc-layout">
-<nav class="am-toc" aria-label="目录"><a href="#panel-A">A · 先看结论</a><a href="#panel-B">B · 先统一比较口径</a><a href="#panel-C">C · 硬件要买什么，预计多少钱</a><a href="#panel-D">D · 识别功能开发和验证费用</a><a href="#panel-E">E · 优缺点和实物风险</a><a href="#panel-F">F · 完整正式系统的预算边界</a><a href="#panel-G">G · 建议如何落地</a><a href="#panel-H">H · 资料依据与使用范围</a></nav><div class="am-doc-body">
+<header class="am-head"><h1>洁净服识别方案 · 两页摘要</h1><p class="am-sub">300套 · 全厂共用3点 · 手机OCR</p><div class="am-head-meta"><span><b>版本</b>两页汇报版 V2.0</span><span><b>日期</b>2026-10-19</span></div></header>
+<div class="am-doc-layout am-doc-layout--notoc">
+<div class="am-doc-body">
 <section class="am-panel" id="panel-A">
-<header class="am-panel-head"><span class="am-panel-id">A</span><h2>先看结论</h2></header>
-<div class="am-panel-body"><div class="am-callout am-callout--ok" role="note"><div class="am-callout-title">推荐：新制300个二维码，配置3台带屏扫码PDA</div><div class="am-callout-body am-md"><p>已确认需要新制作并安装300个二维码。
-先用实际衣物验证，再确定正式采购。
-NFC 作为条件性备选；手写 OCR 不作为一期主识别。</p>
-</div></div>
-<div class="am-md"><div class="am-table-wrap"><table>
-<thead>
-<tr>
-<th>方案</th>
-<th>当前建议</th>
-<th>主要理由</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>二维码＋PDA</td>
-<td><span class="am-status am-status--ok"><span class="am-status-icon" aria-hidden="true">✓</span>一期首选</span></td>
-<td>PDA自带屏幕；按全厂3点配置，统一新制标识</td>
-</tr>
-<tr>
-<td>NFC刷卡</td>
-<td><span class="am-status am-status--warn"><span class="am-status-icon" aria-hidden="true">!</span>试验后再决定</span></td>
-<td>要新增标签、终端和绑定管理</td>
-</tr>
-<tr>
-<td>手写编号＋手机OCR</td>
-<td><span class="am-status am-status--warn"><span class="am-status-icon" aria-hidden="true">!</span>仅作辅助试验</span></td>
-<td>手机可减少设备；字迹识别、复核和验证仍需投入</td>
-</tr>
-</tbody></table></div>
-<p><strong>推荐前提：新制二维码及安装方式通过清洗、灭菌后的适用性验证。</strong></p>
-</div></div>
-</section>
-<section class="am-panel" id="panel-B">
-<header class="am-panel-head"><span class="am-panel-id">B</span><h2>先统一比较口径</h2></header>
-<div class="am-panel-body"><dl class="am-kv" style="--kv-cols: 2"><div class="am-kv-cell"><dt>已确认规模</dt><dd>近期2个生产车间，每车间约150套</dd></div><div class="am-kv-cell"><dt>二维码要求</dt><dd>新制作并安装300个，对应300套</dd></div><div class="am-kv-cell"><dt>现场条件</dt><dd>各操作点均需采购操作终端</dd></div><div class="am-kv-cell"><dt>标识条件</dt><dd>二维码或ID卡均随衣物清洗和灭菌</dd></div><div class="am-kv-cell"><dt>NFC采购</dt><dd>360枚，其中60枚为20%备用</dd></div><div class="am-kv-cell"><dt>已确认点位</dt><dd>全厂集中处理，共用3个操作点</dd></div><div class="am-kv-cell"><dt>终端形态</dt><dd>二维码用PDA；NFC用固定台；OCR用专用手机</dd></div><div class="am-kv-cell"><dt>OCR配置</dt><dd>新购3台安卓手机，厂内服务器承担识别</dd></div><div class="am-kv-cell"><dt>工艺状态</dt><dd>灭菌方式和参数仍未确认</dd></div><div class="am-kv-cell"><dt>人工费率</dt><dd>1,500—2,500元/人天</dd></div><div class="am-kv-cell"><dt>时间口径</dt><dd>1人天为8小时，不是日历天</dd></div></dl>
-<div class="am-callout am-callout--warn" role="note"><div class="am-callout-title">所有金额都是预算假设，尚未取得供应商报价</div><div class="am-callout-body am-md"><p>300套来自用户提供的近期生产规模。
-全厂共用3点、300个二维码均已确认。
-标识材质、制作安装及设备价格仍需正式询价。
-NFC耐工艺标签型号尚未确定，价格只是占位。
-区间低端和高端不能当作实际成交预测。</p>
-</div></div></div>
-</section>
-<section class="am-panel" id="panel-C">
-<header class="am-panel-head"><span class="am-panel-id">C</span><h2>硬件要买什么，预计多少钱</h2></header>
-<div class="am-panel-body"><div class="am-md"><p><strong>单位：万元。均包含新操作终端和1套包装外码打印设备。</strong></p>
-<p>按全厂3个操作点采购设备，不按两个车间重复配置。</p>
+<header class="am-panel-head"><span class="am-panel-id">A</span><h2>采购与开发预算：优先二维码PDA</h2></header>
+<div class="am-panel-body"><div class="am-md"><p><strong>推荐二维码PDA；NFC备选；手机OCR先试验。</strong></p>
+<p>300套 · 全厂共用3点 · 新制300码 · 标识随衣清洗灭菌。</p>
 <div class="am-table-wrap"><table>
 <thead>
 <tr>
-<th>方案</th>
-<th>主要采购内容</th>
-<th align="right">硬件预算</th>
+<th>方案与硬件配置</th>
+<th align="right">硬件采购（万元）</th>
+<th>硬件对接＋专项验证</th>
+<th align="right">完整项目预算（万元）</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>二维码PDA</td>
-<td>3台PDA、新制300个二维码及固定材料</td>
+<td><strong>二维码PDA</strong><br>3台PDA＋300个新码及配件</td>
 <td align="right"><strong>1.25—3.15</strong></td>
-</tr>
-<tr>
-<td>NFC刷卡</td>
-<td>3套读卡设备及终端、360枚候选标签</td>
-<td align="right"><strong>1.75—3.89</strong></td>
-</tr>
-<tr>
-<td>手机OCR</td>
-<td>3台专用手机、支架补光、充电及标识耗材</td>
-<td align="right"><strong>0.80—1.97</strong></td>
-</tr>
-</tbody></table></div>
-<p>下面拆分全厂集中共用3点的采购预算。</p>
-<h3>二维码采购拆分</h3>
-<div class="am-table-wrap"><table>
-<thead>
-<tr>
-<th>项目</th>
-<th>数量与单价假设</th>
-<th align="right">小计（元）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>带屏二维扫码PDA</td>
-<td>3台 × 2,500—6,000元</td>
-<td align="right">7,500—18,000</td>
-</tr>
-<tr>
-<td>充电座、电池和防护配件</td>
-<td>1批</td>
-<td align="right">1,000—2,500</td>
-</tr>
-<tr>
-<td>衣物二维码及固定材料占位</td>
-<td>300个 × 5—15元</td>
-<td align="right">1,500—4,500</td>
-</tr>
-<tr>
-<td>包装打印机及首批耗材</td>
-<td>1套</td>
-<td align="right">2,500—6,500</td>
-</tr>
-<tr>
-<td><strong>合计</strong></td>
-<td>新制300个二维码，安装人工另行核价</td>
-<td align="right"><strong>12,500—31,500</strong></td>
-</tr>
-</tbody></table></div>
-<h3>NFC采购拆分</h3>
-<div class="am-table-wrap"><table>
-<thead>
-<tr>
-<th>项目</th>
-<th>数量与单价假设</th>
-<th align="right">小计（元）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>读卡器</td>
-<td>3台 × 300—1,000元</td>
-<td align="right">900—3,000</td>
-</tr>
-<tr>
-<td>操作终端</td>
-<td>3台 × 2,500—4,000元</td>
-<td align="right">7,500—12,000</td>
-</tr>
-<tr>
-<td>耐工艺标签占位</td>
-<td>360枚 × 15—40元</td>
-<td align="right">5,400—14,400</td>
-</tr>
-<tr>
-<td>固定材料及小批装配占位</td>
-<td>随标签数量调整的预算占位</td>
-<td align="right">1,200—3,000</td>
-</tr>
-<tr>
-<td>包装打印机及首批耗材</td>
-<td>1套</td>
-<td align="right">2,500—6,500</td>
-</tr>
-<tr>
-<td><strong>合计</strong></td>
-<td>普通卡不能替代工艺合格标签</td>
-<td align="right"><strong>17,500—38,900</strong></td>
-</tr>
-</tbody></table></div>
-<h3>手机OCR采购拆分</h3>
-<div class="am-table-wrap"><table>
-<thead>
-<tr>
-<th>项目</th>
-<th>数量与单价假设</th>
-<th align="right">小计（元）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>专用安卓手机</td>
-<td>3台 × 1,500—3,500元</td>
-<td align="right">4,500—10,500</td>
-</tr>
-<tr>
-<td>补光和拍照支架</td>
-<td>3套 × 200—500元</td>
-<td align="right">600—1,500</td>
-</tr>
-<tr>
-<td>充电及防护配件</td>
-<td>1批</td>
-<td align="right">300—900</td>
-</tr>
-<tr>
-<td>标识笔及试验耗材占位</td>
-<td>1批</td>
-<td align="right">100—300</td>
-</tr>
-<tr>
-<td>包装打印机及首批耗材</td>
-<td>1套</td>
-<td align="right">2,500—6,500</td>
-</tr>
-<tr>
-<td><strong>合计</strong></td>
-<td>手机兼做相机和操作终端</td>
-<td align="right"><strong>8,000—19,700</strong></td>
-</tr>
-</tbody></table></div>
-<p>手机价格是普通商用设备的预算占位，不是洁净区准入结论。
-若报价已含充电配件，应扣除重复项目。
-与原相机加电脑方案相比，硬件预算低4,500—6,000元。
-这是估算区间端点之差，不是已验证的采购节省。</p>
-<p><strong>三种方案均只计1套包装设备，为2,500—6,500元。</strong>
-若需要两套，三种方案都再加同样费用；无需新增则扣除。</p>
-<p>二维码的5—15元是标签及固定材料的新预算占位。
-已确认全部新制并安装，不再采用旧码抵扣假设。
-5—15元仅计标签及固定材料，不含安装人工。
-印制、缝装或热封及工艺试验，应取得完整报价。</p>
-<p>衣物二维码为300个。NFC比较方案按360枚采购。
-其中60枚是预算采用的备用量，不是额外衣物数。</p>
-<p>PDA自带屏幕和计算能力，不再重复买电脑。
-手机OCR同时利用手机摄像头、屏幕和系统，不再采购相机及电脑。
-NFC固定读卡器仍需配套操作终端。
-如果NFC也要移动作业，应改报带屏NFC终端。</p>
-<p>手机也能扫二维码，但本页二维码方案仍按专业PDA报价。
-两种终端的扫描体验与洁净区适用性，应实机比较。</p>
-</div></div>
-</section>
-<section class="am-panel" id="panel-D">
-<header class="am-panel-head"><span class="am-panel-id">D</span><h2>识别功能开发和验证费用</h2></header>
-<div class="am-panel-body"><div class="am-md"><p><strong>这里按3个操作点比较识别部分，不是完整正式系统。</strong></p>
-<div class="am-table-wrap"><table>
-<thead>
-<tr>
-<th>方案</th>
-<th align="right">合计人天</th>
-<th align="right">人工费用（万元）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>二维码PDA</td>
-<td align="right"><strong>2—3</strong></td>
-<td align="right"><strong>0.30—0.75</strong></td>
-</tr>
-<tr>
-<td>NFC刷卡</td>
-<td align="right"><strong>6—11</strong></td>
-<td align="right"><strong>0.90—2.75</strong></td>
-</tr>
-<tr>
-<td>手机OCR</td>
-<td align="right"><strong>12—23</strong></td>
-<td align="right"><strong>1.80—5.75</strong></td>
-</tr>
-</tbody></table></div>
-<ul>
-<li>二维码：开发2—3人天，适配PDA及扫码输入。</li>
-<li>NFC：开发4—7人天，新增专项验证2—4人天。</li>
-<li>OCR：开发8—15人天，新增专项验证4—8人天。</li>
-</ul>
-<p>二维码常规验证已计入共用系统验证，不是免验证。
-NFC增加读卡接入、电子ID绑定和换卡控制。
-手机OCR增加拍照、图像上传、识别部署和人工复核。
-默认在厂内服务器识别，复用可用算力，不调用外部云OCR。
-若需新增推理服务器或商业许可，应另计费用。
-手机端独立推理属于另一技术路线，需单独评估。</p>
-<p>手机替代了相机和电脑，不替代OCR软件开发及验证。
-仍按一种安卓机型及浏览器估算，多平台兼容另估。
-OCR估算不含专用手写模型训练，也不承诺识别准确率。
-NFC若需非标准SDK或多种终端适配，应另估工作量。</p>
-<h3>采集部分小计</h3>
-<div class="am-table-wrap"><table>
-<thead>
-<tr>
-<th>方案</th>
-<th align="right">硬件＋识别专属开发/验证（万元）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>二维码PDA</td>
-<td align="right"><strong>1.55—3.90</strong></td>
-</tr>
-<tr>
-<td>NFC刷卡</td>
-<td align="right"><strong>2.65—6.64</strong></td>
-</tr>
-<tr>
-<td>手机OCR</td>
-<td align="right"><strong>2.60—7.72</strong></td>
-</tr>
-</tbody></table></div>
-<p><strong>本表不含共用系统开发，也未加15%人天预留。</strong></p>
-<p>300套不需要把软件开发人天翻倍。
-全厂共用3点，不增加第二套车间部署预算。</p>
-</div></div>
-</section>
-<section class="am-panel" id="panel-E">
-<header class="am-panel-head"><span class="am-panel-id">E</span><h2>优缺点和实物风险</h2></header>
-<div class="am-panel-body"><div class="am-md"><div class="am-table-wrap"><table>
-<thead>
-<tr>
-<th>维度</th>
-<th>二维码PDA</th>
-<th>NFC刷卡</th>
-<th>手机OCR</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>标识配置</td>
-<td>新制并安装300个二维码</td>
-<td>新增电子标签和绑定</td>
-<td>新增书写及维护规则</td>
-</tr>
-<tr>
-<td>操作要求</td>
-<td>露出并对准二维码</td>
-<td>将正确标签靠近读区</td>
-<td>找字迹、摊平、拍照、复核</td>
-</tr>
-<tr>
-<td>优点</td>
-<td>接入较直接，PDA可移动</td>
-<td>不依赖可见字符清晰度</td>
-<td>手机可移动，兼做拍照和操作终端</td>
-</tr>
-<tr>
-<td>主要局限</td>
-<td>褶皱、污损、褪色及遮挡</td>
-<td>标签耐工艺、互换/脱落、读卡接入</td>
-<td>字迹差异、手持角度、光照及误识别</td>
-</tr>
-<tr>
-<td>隔袋读取</td>
-<td>需透视读码或绑定外包装码</td>
-<td>可能可读，须实测包装和读区</td>
-<td>看不见字迹就无法识别</td>
-</tr>
-<tr>
-<td>H5接入</td>
-<td>优先键盘式扫码输出</td>
-<td>取决于读卡器、协议和软件接口</td>
-<td>网页拍照后还需识别和业务校验</td>
-</tr>
-<tr>
-<td>后续维护</td>
-<td>补标、电池、设备清洁</td>
-<td>换标、绑定核对、驱动或SDK</td>
-<td>手机清洁、成像条件、模型及复核规则</td>
-</tr>
-</tbody></table></div>
-</div>
-<div class="am-callout am-callout--warn" role="note"><div class="am-callout-title">“识别成功”不等于“识别了正确实物”</div><div class="am-callout-body am-md"><p>NFC卡可能挂错衣服。
-OCR可能读成另一件真实存在的编号。
-二维码标签也可能绑定错误。
-三种方案都要核对首次绑定及换标记录。</p>
-</div></div>
-<div class="am-md"><h3>清洗和灭菌是共同约束</h3>
-<p>标识随衣物灭菌，手机不随衣物灭菌。
-QA需确认手机进区、清洁消毒及戴手套操作是否可行。</p>
-<p>普通PVC卡、普通NFC贴纸不能默认耐反复灭菌。
-标签的芯片、封装、天线和固定材料应一起验证。
-记号笔需评估掉色、扩散及对衣物性能的影响。
-“防水”或“永久性”不能替代实际工艺证据。</p>
-<p>封包后不要为识码而破坏无菌屏障。
-必要时在封包前绑定外包装码和袋内成员。</p>
-<p><strong>三种方式只识别身份。实际工序完成并确认后，系统才更新次数。</strong></p>
-</div></div>
-</section>
-<section class="am-panel" id="panel-F">
-<header class="am-panel-head"><span class="am-panel-id">F</span><h2>完整正式系统的预算边界</h2></header>
-<div class="am-panel-body"><div class="am-md"><p>现有Demo确认了业务方向，尚未完成正式后台及验证。
-三种方案共用批次、计数、放行、权限、审计和恢复功能。</p>
-<div class="am-table-wrap"><table>
-<thead>
-<tr>
-<th>共用部分</th>
-<th align="right">规划工作量</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>共用开发及工程测试</td>
-<td align="right">42—62人天</td>
-</tr>
-<tr>
-<td>共用验证支持</td>
-<td align="right">18—28人天</td>
-</tr>
-<tr>
-<td><strong>共用合计</strong></td>
-<td align="right"><strong>60—90人天</strong></td>
-</tr>
-</tbody></table></div>
-<p>加入各方案识别工作，再加15%人天预留并向上取整：</p>
-<div class="am-table-wrap"><table>
-<thead>
-<tr>
-<th>方案</th>
-<th align="right">含预留总人天</th>
-<th align="right">项目预算（万元）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>二维码PDA</td>
-<td align="right">72—107</td>
+<td><strong>2—3人天</strong><br>0.30—0.75万元</td>
 <td align="right"><strong>12.05—29.90</strong></td>
 </tr>
 <tr>
-<td>NFC＋新终端</td>
-<td align="right">76—117</td>
+<td><strong>NFC刷卡</strong><br>3套读卡器/终端＋360枚标签*</td>
+<td align="right"><strong>1.75—3.89</strong></td>
+<td><strong>6—11人天</strong><br>0.90—2.75万元</td>
 <td align="right"><strong>13.15—33.14</strong></td>
 </tr>
 <tr>
-<td>手机OCR</td>
-<td align="right">83—130</td>
+<td><strong>手机OCR</strong><br>3台专用手机＋补光/支架及耗材</td>
+<td align="right"><strong>0.80—1.97</strong></td>
+<td><strong>12—23人天</strong><br>1.80—5.75万元</td>
 <td align="right"><strong>13.25—34.47</strong></td>
 </tr>
 </tbody></table></div>
-<p>项目预算＝含预留的人天费用＋硬件采购。
-二维码安装人工及材料工艺试验尚待询价，未计入总额。</p>
-<p><strong>本表已经包含前面的识别工作和硬件，不要再次相加。</strong></p>
-<p>未计新增后台或OCR推理服务器、网络施工及额外许可。
-特殊可消毒手机或更高防护等级设备需重新报价。
-材料工艺试验、现场人员工时、税运差旅也需另核实。
-报价区间重叠，最终应按相同范围比较供应商报价。</p>
-<h3>还要看每次操作耗时</h3>
-<p>以下仅为敏感性示例，不是实测结果：</p>
+<h3>共用系统：开发42—62人天＋验证18—28人天</h3>
+<p>范围包括档案、批次、计数、放行、权限、审计、报表和恢复验证。</p>
+<p>完整项目已含共用工作、方案专属工作、15%人工预留和硬件。<strong>不能重复相加。</strong></p>
+</div>
+<div class="am-callout am-callout--warn" role="note"><div class="am-callout-title">预算口径，不是供应商报价</div><div class="am-callout-body am-md"><p>费率1,500—2,500元/人天；二维码常规验证已在共用范围。
+硬件均含1套包装打印设备及首批耗材。*NFC含60枚备用标签。
+未计二维码安装人工、材料工艺试验、新服务器、网络、额外许可及税运差旅。</p>
+</div></div></div>
+</section>
+<section class="am-panel" id="panel-B">
+<header class="am-panel-head"><span class="am-panel-id">B</span><h2>优缺点与记录效率</h2></header>
+<div class="am-panel-body"><div class="am-md"><p><strong>系统主要减少抄写与累计；识别可靠性仍须实物验证。</strong></p>
 <div class="am-table-wrap"><table>
 <thead>
 <tr>
-<th>假设</th>
-<th>计算结果</th>
+<th>方式</th>
+<th>优点</th>
+<th>主要局限</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>300套，每周周转2次，每套识别3次，按50周计</td>
-<td>每年90,000次识别</td>
+<td><strong>二维码PDA</strong></td>
+<td>接入较直接；可移动操作</td>
+<td>要露出码；污损或褶皱影响读取</td>
 </tr>
 <tr>
-<td>每次操作多4秒</td>
-<td>每年多100小时</td>
+<td><strong>NFC刷卡</strong></td>
+<td>不依赖可见字迹；近距离刷卡</td>
+<td>耐工艺标签待选；脱落/换卡可错绑；接口需适配</td>
 </tr>
 <tr>
-<td>人工按60元/小时占位</td>
-<td>每年多6,000元，三年多18,000元</td>
+<td><strong>手机OCR</strong></td>
+<td>手机兼做相机和终端；硬件较少</td>
+<td>字迹、光照影响识别；需人工复核；手机进区需QA确认</td>
 </tr>
 </tbody></table></div>
-<p>计时应包括拿取、翻找、摊平、重试及复核。
-只测扫码引擎的响应时间，不能反映现场成本。</p>
+</div>
+<div class="efficiency" aria-label="手工和系统效率示例">
+  <div class="eff-head"><h3>处理300套的记录时间</h3><span>示例假设 · 非实测</span></div>
+  <p class="eff-intro">可修改每套耗时，比较结果会同步变化。</p>
+  <div class="eff-row" data-key="manual"><div class="eff-label"><b>手工记录</b><label><input id="time-manual" type="number" min="0.1" max="300" step="0.1" value="30" aria-label="人工每套记录秒数"> 秒/套</label></div><div class="bar"><span></span></div><div class="eff-result"><strong></strong><small></small></div></div>
+  <div class="eff-row" data-key="qr"><div class="eff-label"><b>二维码PDA</b><label><input id="time-qr" type="number" min="0.1" max="300" step="0.1" value="8" aria-label="二维码每套记录秒数"> 秒/套</label></div><div class="bar"><span></span></div><div class="eff-result"><strong></strong><small></small></div></div>
+  <div class="eff-row" data-key="nfc"><div class="eff-label"><b>NFC刷卡</b><label><input id="time-nfc" type="number" min="0.1" max="300" step="0.1" value="6" aria-label="NFC每套记录秒数"> 秒/套</label></div><div class="bar"><span></span></div><div class="eff-result"><strong></strong><small></small></div></div>
+  <div class="eff-row" data-key="ocr"><div class="eff-label"><b>手机OCR</b><label><input id="time-ocr" type="number" min="0.1" max="300" step="0.1" value="15" aria-label="OCR每套记录秒数"> 秒/套</label></div><div class="bar"><span></span></div><div class="eff-result"><strong></strong><small></small></div></div>
+  <p id="eff-warning" role="alert" hidden>请填写0.1—300秒的有效数值。</p>
+  <p class="eff-note">300套 × 每套秒数 ÷ 60＝分钟。默认秒数不是设备性能承诺。<br>只比较单件记录，不含共同批次登记、QA审核及洗灭时长。</p>
+</div>
+<div class="am-callout am-callout--info" role="note"><div class="am-callout-title">实测后再决定采购</div><div class="am-callout-body am-md"><p>取20—30套衣物，计入拿取、找码/摊平、重试及核对时间。
+同时记录漏记、错绑和误识别，不只比较速度。
+二维码与NFC的耐清洗灭菌能力、笔墨适用性均须验证。</p>
 </div></div>
-</section>
-<section class="am-panel" id="panel-G">
-<header class="am-panel-head"><span class="am-panel-id">G</span><h2>建议如何落地</h2></header>
-<div class="am-panel-body"><ol class="am-timeline am-timeline--v"><li class="am-tl-item"><span class="am-tl-when">01</span><span class="am-tl-dot"></span><span class="am-tl-title">先确认灭菌工艺</span><span class="am-tl-text">明确方法、温度、压力、时长和重复次数。</span></li><li class="am-tl-item am-tl-item--hi"><span class="am-tl-when">02</span><span class="am-tl-dot"></span><span class="am-tl-title">借测一台二维码PDA</span><span class="am-tl-text">用20—30件代表性衣物验证读取和全操作耗时。</span></li><li class="am-tl-item"><span class="am-tl-when">03</span><span class="am-tl-dot"></span><span class="am-tl-title">按需做NFC对照</span><span class="am-tl-text">若二维码明显不便，再测10—20枚候选标签。</span></li><li class="am-tl-item"><span class="am-tl-when">04</span><span class="am-tl-dot"></span><span class="am-tl-title">用专用手机试验OCR</span><span class="am-tl-text">确认进区与笔墨适用，再测试拍摄、误识别和复核。</span></li><li class="am-tl-item"><span class="am-tl-when">05</span><span class="am-tl-dot"></span><span class="am-tl-title">同口径询价并确认</span><span class="am-tl-text">业务、QA和IT核对适用性后确定采购。</span></li></ol>
-<div class="am-md"><p>短期试验不能证明标签全寿命耐久性。
-已确认集中共用3点，并新制安装300个二维码。
-正式采购前需确认灭菌方式、标签材质和安装工艺。</p>
-<p>本页按用户给出的300个标识估算。
-如果一套中的衣服、鞋套会分开流转，应分别编码。
-此时实际标识数将大于300，需重新清点。</p>
-</div></div>
-</section>
-<section class="am-panel" id="panel-H">
-<header class="am-panel-head"><span class="am-panel-id">H</span><h2>资料依据与使用范围</h2></header>
-<div class="am-panel-body"><div class="am-md"><p><strong>费用来源：内部工程预算假设，未取得有效采购报价。</strong>
-设备接口事实与费用假设分开使用。</p>
-<div class="am-table-wrap"><table>
-<thead>
-<tr>
-<th>官方资料</th>
-<th>本页引用的结论</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.acs.com.hk/download-manual/419/API-ACR122U-2.04.pdf">ACS ACR122U API</a></td>
-<td>PC/SC与CCID接口，不能默认当作键盘扫码枪</td>
-</tr>
-<tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_NFC_API">MDN Web NFC</a></td>
-<td>Web NFC有平台和格式限制，不是通用USB读卡接口</td>
-</tr>
-<tr>
-<td><a href="https://www.chainway.net/Products/Info/42">Chainway C72规格</a></td>
-<td>二维码与NFC可同机，采购须核对选配及工艺适用性</td>
-</tr>
-<tr>
-<td><a href="https://www.nxp.com/docs/en/data-sheet/NTAG213_215_216.pdf">NXP标签芯片数据表</a></td>
-<td>芯片温度参数不能代替成品标签灭菌循环验证</td>
-</tr>
-<tr>
-<td><a href="https://www.paddleocr.ai/main/en/version3.x/algorithm/PP-OCRv5/PP-OCRv5.html">PaddleOCR PP-OCRv5</a></td>
-<td>支持手写识别，不代表本项目布料编号准确率</td>
-</tr>
-</tbody></table></div>
-<p>本页已获授权公开预算，用于讨论和供应商沟通。
-它不是采购规格书；新增二维码单价仍为预算占位。
-尚未试用设备，也未完成材料工艺验证或正式系统验证。
-下一版应以手机样机、现场试验及供应商书面报价更新。</p>
-</div></div>
+<style>
+:root{--deck-green:#176650;--deck-ink:#183b31;--deck-muted:#61796e;--deck-line:#dbe6df;--deck-amber:#94641e}
+html,body{margin:0!important;background:#eaf0ec!important;color:var(--deck-ink)!important;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif!important;overflow:hidden;height:100%;min-height:100vh}
+.am-toolbar,.am-head,.am-toc,.am-colophon,.am-panel-id,.am-panel-head button{display:none!important}
+main.am-doc{min-height:calc(100vh - 80px)!important;display:block!important;position:relative!important;max-width:none!important;width:100%!important;margin:0!important;padding:0!important}
+.am-doc-layout,.am-doc-body{display:block!important;width:100%!important;max-width:none!important;margin:0!important;padding:0!important}
+.am-panel{display:none!important;position:absolute!important;box-sizing:border-box!important;width:1600px!important;height:900px!important;margin:0!important;padding:42px 60px 48px!important;border:0!important;border-radius:0!important;background:#fff!important;box-shadow:0 12px 50px #17382a14;overflow:hidden!important;transform-origin:top left!important}
+.am-panel.is-active{display:block!important}
+.am-panel-head{padding:0 0 21px!important;margin:0 0 20px!important;border:0!important;border-bottom:3px solid var(--deck-green)!important;background:transparent!important;min-height:0!important}
+.am-panel-head h2{margin:0!important;padding:0!important;font-family:inherit!important;font-size:40px!important;line-height:1.25!important;font-weight:700!important;color:var(--deck-ink)!important;letter-spacing:-1px}
+.am-panel-body{padding:0!important;margin:0!important;display:block!important}
+.am-panel-body>.am-md>p{font-size:23px!important;line-height:1.5!important;margin:10px 0!important;font-family:inherit!important}
+.am-panel-body h3{font-size:25px!important;line-height:1.3!important;margin:22px 0 10px!important;font-family:inherit!important;color:var(--deck-green)!important}
+.am-md,.am-md table{font-family:inherit!important}
+.am-table-wrap{margin:20px 0!important;border:0!important;overflow:auto!important}
+.am-md table{table-layout:fixed!important;width:100%!important;border-collapse:collapse!important;font-size:23px!important;line-height:1.4!important;color:var(--deck-ink)!important}
+.am-md table th{background:#eaf3ed!important;color:var(--deck-green)!important;font-size:20px!important;text-align:left!important;font-weight:650!important;border:0!important;border-bottom:2px solid #b4cbbb!important;padding:12px 16px!important;white-space:normal!important}
+.am-md table td{padding:13px 16px!important;border:0!important;border-bottom:1px solid var(--deck-line)!important;vertical-align:middle!important;background:white!important;white-space:normal!important;overflow-wrap:anywhere!important}
+#panel-A table th:nth-child(1){width:33%}#panel-A table th:nth-child(2){width:18%}#panel-A table th:nth-child(3){width:26%}#panel-A table th:nth-child(4){width:23%}
+#panel-A table tbody tr:first-child td{background:#f4f9f5!important}
+#panel-A table td strong{font-size:28px!important;font-weight:700!important}
+.am-callout{box-sizing:border-box!important;padding:12px 16px!important;margin:20px 0 0!important;border:0!important;border-left:4px solid #d3b375!important;background:#fbf7ee!important;border-radius:0!important;font-family:inherit!important}
+.am-callout-title{font-size:18px!important;line-height:1.4!important;font-weight:700!important;margin:0 0 3px!important}
+.am-callout-body p{font-size:18px!important;line-height:1.45!important;margin:0!important}
+#panel-B .am-panel-body{display:grid!important;grid-template-columns:1.02fr 1fr;gap:24px 42px!important;align-items:start!important}
+#panel-B .am-panel-body>.am-md{min-width:0;grid-column:1}
+#panel-B .am-panel-body>.am-md>p{font-size:22px!important;margin:0 0 18px!important}
+#panel-B table{font-size:23px!important}
+#panel-B table th:first-child{width:25%}#panel-B table th:nth-child(2){width:31%}#panel-B table th:nth-child(3){width:44%}
+#panel-B table td{padding:25px 13px!important;vertical-align:top!important}
+#panel-B .am-callout{grid-column:1/-1;margin-top:0!important;border-color:#83ad96!important;background:#eff6f1!important}
+.efficiency{grid-column:2;grid-row:1;min-width:0;border-left:1px solid var(--deck-line);padding-left:32px;color:var(--deck-ink)}
+.eff-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.eff-head h3{font-size:25px!important;margin:0!important}.eff-head>span{font-size:17px;font-weight:650;color:var(--deck-amber)}
+.eff-intro{font-size:19px;line-height:1.5;color:var(--deck-muted);margin:7px 0 12px}
+.eff-row{padding:11px 0;border-bottom:1px solid var(--deck-line)}.eff-label{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:22px}.eff-label label{font-size:18px;color:var(--deck-muted);white-space:nowrap}
+.eff-label input{box-sizing:border-box;width:76px;min-height:38px;padding:2px 7px;border:1px solid #bed0c3;border-radius:4px;font:inherit;font-weight:600;color:var(--deck-ink);background:#fff;text-align:right}.eff-label input:focus{outline:3px solid #a4cbb7;outline-offset:2px}.eff-label input[aria-invalid=true]{border-color:#bd5346}
+.bar{height:9px;background:#edf2ee;margin:8px 0;border-radius:2px;overflow:hidden}.bar span{display:block;height:100%;background:var(--deck-green);width:0;transition:width .15s}.eff-row[data-key=manual] .bar span{background:#8a9a91}.eff-row[data-key=ocr] .bar span{background:#b28a52}
+.eff-result{display:flex;justify-content:space-between;gap:8px;align-items:center;line-height:1.2}.eff-result strong{font-size:23px}.eff-result small{font-size:18px;color:var(--deck-muted)}.eff-result small.worse{color:#b6473e}
+.eff-note{font-size:17px;line-height:1.5;margin:13px 0 0;color:var(--deck-muted)}#eff-warning{font-size:17px;color:#b6473e;margin:7px 0}
+.am-panel::after{content:attr(data-page) ' / 02     洁净服识别方案 · 2026-10-19';position:absolute;bottom:18px;right:60px;font-size:16px;letter-spacing:.5px;color:#778c80}
+.deck-nav{position:fixed;z-index:100;bottom:14px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #cddbd1;padding:5px 8px;border-radius:8px;box-shadow:0 4px 18px #13382810}.deck-nav button{font:inherit;font-size:14px;min-height:34px;cursor:pointer;padding:5px 12px;border:0;background:#eef4ef;border-radius:5px;color:var(--deck-ink)}.deck-nav button:disabled{opacity:.35;cursor:default}.deck-nav output{font-size:14px;min-width:45px;text-align:center}.deck-nav button:focus-visible{outline:3px solid #8dbda4}
+@media(max-width:959px){#panel-A .am-table-wrap::before{content:"左右滑动查看完整成本表";display:block;font-size:12px;color:#61796e;margin-bottom:8px}html,body{overflow:auto!important}main.am-doc{padding:12px 12px 75px!important;box-sizing:border-box}.am-panel{position:relative!important;left:auto!important;top:auto!important;margin:0!important;width:100%!important;height:auto!important;min-height:calc(100vh - 100px);padding:24px 17px 55px!important;transform:none!important;overflow:visible!important}.am-panel-head{padding-bottom:14px!important;margin-bottom:17px!important}.am-panel-head h2{font-size:27px!important;letter-spacing:-.5px}.am-panel-body>.am-md>p{font-size:16px!important;line-height:1.7!important}.am-panel-body h3{font-size:20px!important}.am-md table{min-width:640px!important;font-size:17px!important}.am-md table th{font-size:15px!important;padding:10px!important}.am-md table td{padding:15px 10px!important}#panel-A table td strong{font-size:19px!important}.am-callout{padding:11px!important}.am-callout-title{font-size:16px!important}.am-callout-body p{font-size:14px!important;line-height:1.7!important}#panel-B .am-panel-body{display:block!important}#panel-B .am-panel-body>.am-md>p{font-size:16px!important}#panel-B table{min-width:0!important;font-size:15px!important}#panel-B table td{padding:14px 10px!important}.efficiency{border:0;border-top:1px solid var(--deck-line);padding:18px 0;margin-top:20px}.eff-head{align-items:start;flex-direction:column;gap:5px}.eff-head h3{font-size:21px!important}.eff-head>span{font-size:14px}.eff-intro{font-size:15px}.eff-label{font-size:17px}.eff-label label{font-size:15px}.eff-label input{min-height:44px;width:70px}.eff-result strong{font-size:20px}.eff-result small{font-size:14px}.eff-note{font-size:14px}.am-panel::after{bottom:16px;right:17px;font-size:11px}.deck-nav{width:max-content;max-width:95vw;gap:7px;bottom:8px}.deck-nav button{min-height:40px;padding:5px 10px}}
+@media print{@page{size:1600px 900px;margin:0}html,body{background:white!important;overflow:visible!important;width:1600px!important}main.am-doc{padding:0!important;margin:0!important;width:1600px!important}.am-panel{display:block!important;position:relative!important;left:0!important;top:0!important;transform:none!important;width:1600px!important;height:900px!important;margin:0!important;box-shadow:none!important;break-after:page;page-break-after:always}.am-panel:last-of-type{break-after:auto;page-break-after:auto}.deck-nav{display:none!important}.bar span{print-color-adjust:exact;-webkit-print-color-adjust:exact}.am-panel-head{break-after:avoid}.am-md table tr{break-inside:avoid}#panel-B .am-panel-body{display:block!important;position:relative!important;height:710px!important}#panel-B .am-panel-body>.am-md{position:absolute!important;left:0;top:0;width:726px!important}#panel-B .efficiency{position:absolute!important;top:0;right:0;width:712px!important;box-sizing:border-box;margin:0!important}#panel-B .am-callout{position:absolute!important;left:0;bottom:0;width:100%!important}}
+</style>
+<script>
+window.addEventListener('DOMContentLoaded',()=>{
+ const slides=[...document.querySelectorAll('.am-panel')];let current=0;
+ const nav=document.createElement('nav');nav.className='deck-nav';nav.setAttribute('aria-label','幻灯片翻页');nav.innerHTML='<button id="deck-prev" aria-label="上一页">← 上一页</button><output id="deck-count" aria-live="polite">1 / 2</output><button id="deck-next" aria-label="下一页">下一页 →</button><button id="deck-print" aria-label="打印两页">打印</button>';document.body.append(nav);
+ const prev=document.getElementById('deck-prev'),next=document.getElementById('deck-next'),count=document.getElementById('deck-count');
+ function fit(){const mobile=innerWidth<960,scale=Math.min((innerWidth-48)/1600,(innerHeight-100)/900,1.2);slides.forEach((s,i)=>{s.dataset.page=String(i+1).padStart(2,'0');s.style.transform=mobile?'none':`scale(${Math.max(.1,scale)})`;s.style.left=mobile?'0':`${(innerWidth-1600*scale)/2}px`;s.style.top=mobile?'0':'24px';});}
+ function show(i){current=Math.max(0,Math.min(slides.length-1,i));slides.forEach((s,j)=>{s.classList.toggle('is-active',j===current);s.setAttribute('aria-hidden',String(j!==current));});prev.disabled=current===0;next.disabled=current===slides.length-1;count.textContent=`${current+1} / ${slides.length}`;fit();window.scrollTo(0,0);}
+ prev.onclick=()=>show(current-1);next.onclick=()=>show(current+1);document.getElementById('deck-print').onclick=()=>window.print();
+ document.addEventListener('keydown',e=>{if(/INPUT|TEXTAREA|SELECT/.test(e.target.tagName))return;if(e.key==='ArrowRight'||e.key==='PageDown'){e.preventDefault();show(current+1);}if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();show(current-1);}});window.addEventListener('resize',fit);
+ const keys=['manual','qr','nfc','ocr'],inputs=Object.fromEntries(keys.map(k=>[k,document.getElementById('time-'+k)]));
+ const fmt=n=>Number(n.toFixed(1)).toLocaleString('zh-CN');
+ function update(){const times={};let valid=true;keys.forEach(k=>{const x=inputs[k],n=Number(x.value),ok=x.value.trim()!==''&&Number.isFinite(n)&&n>=.1&&n<=300;x.setAttribute('aria-invalid',String(!ok));if(!ok)valid=false;times[k]=n;});document.getElementById('eff-warning').hidden=valid;const max=Math.max(...Object.values(times));keys.forEach(k=>{const row=document.querySelector(`[data-key="${k}"]`),result=row.querySelector('strong'),note=row.querySelector('small');row.querySelector('.bar span').style.width=valid?`${times[k]/max*100}%`:'0';if(!valid){result.textContent='—';note.textContent='请检查输入';return;}const minutes=times[k]*300/60;result.textContent=fmt(minutes)+' 分钟';note.classList.remove('worse');if(k==='manual'){note.textContent='人工对照基线';return;}const delta=(times.manual-times[k])*300/60;note.textContent=delta>=0?'比人工少 '+fmt(delta)+' 分钟':'比人工多 '+fmt(-delta)+' 分钟';if(delta<0)note.classList.add('worse');});}
+ Object.values(inputs).forEach(input=>input.addEventListener('input',update));update();show(0);
+});
+</script></div>
 </section>
 </div>
 </div>
 </main>
-<footer class="am-colophon">Generated by <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" rel="noopener">Answer me with HTML</a> 0.5.0 · 2026-10-16 17:00 · <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" rel="noopener">★ Star on GitHub</a></footer>
+<footer class="am-colophon">Generated by <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" rel="noopener">Answer me with HTML</a> 0.5.0 · 2026-10-19 09:52 · <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" rel="noopener">★ Star on GitHub</a></footer>
 <textarea id="am-source" hidden readonly aria-hidden="true">---
-title: 两车间300套 · 实物识别方案
-subtitle: 300套 · 集中共用3点 · OCR改用3台专用手机
-template: doc
-theme: paper
-mode: light
+title: 洁净服识别方案 · 两页摘要
+subtitle: 300套 · 全厂共用3点 · 手机OCR
 lang: zh
+template: doc
+theme: shadcn
+mode: light
 style: 80
-日期: 2026-10-16
-版本: 手机OCR口径 V1.3
+版本: 两页汇报版 V2.0
+日期: 2026-10-19
 ---
+## A 采购与开发预算：优先二维码PDA
 
-**一期推荐二维码＋带屏PDA。NFC备选，手机OCR仅作辅助。**
+**推荐二维码PDA；NFC备选；手机OCR先试验。**
 
-## A 先看结论
+300套 · 全厂共用3点 · 新制300码 · 标识随衣清洗灭菌。
 
-```callout ok 推荐：新制300个二维码，配置3台带屏扫码PDA
-已确认需要新制作并安装300个二维码。
-先用实际衣物验证，再确定正式采购。
-NFC 作为条件性备选；手写 OCR 不作为一期主识别。
+| 方案与硬件配置 | 硬件采购（万元） | 硬件对接＋专项验证 | 完整项目预算（万元） |
+|---|---:|---|---:|
+| **二维码PDA**&lt;br&gt;3台PDA＋300个新码及配件 | **1.25—3.15** | **2—3人天**&lt;br&gt;0.30—0.75万元 | **12.05—29.90** |
+| **NFC刷卡**&lt;br&gt;3套读卡器/终端＋360枚标签* | **1.75—3.89** | **6—11人天**&lt;br&gt;0.90—2.75万元 | **13.15—33.14** |
+| **手机OCR**&lt;br&gt;3台专用手机＋补光/支架及耗材 | **0.80—1.97** | **12—23人天**&lt;br&gt;1.80—5.75万元 | **13.25—34.47** |
+
+### 共用系统：开发42—62人天＋验证18—28人天
+
+范围包括档案、批次、计数、放行、权限、审计、报表和恢复验证。
+
+完整项目已含共用工作、方案专属工作、15%人工预留和硬件。**不能重复相加。**
+
+```callout warn 预算口径，不是供应商报价
+费率1,500—2,500元/人天；二维码常规验证已在共用范围。
+硬件均含1套包装打印设备及首批耗材。*NFC含60枚备用标签。
+未计二维码安装人工、材料工艺试验、新服务器、网络、额外许可及税运差旅。
 ```
 
-| 方案 | 当前建议 | 主要理由 |
+## B 优缺点与记录效率
+
+**系统主要减少抄写与累计；识别可靠性仍须实物验证。**
+
+| 方式 | 优点 | 主要局限 |
 |---|---|---|
-| 二维码＋PDA | ok 一期首选 | PDA自带屏幕；按全厂3点配置，统一新制标识 |
-| NFC刷卡 | warn 试验后再决定 | 要新增标签、终端和绑定管理 |
-| 手写编号＋手机OCR | warn 仅作辅助试验 | 手机可减少设备；字迹识别、复核和验证仍需投入 |
+| **二维码PDA** | 接入较直接；可移动操作 | 要露出码；污损或褶皱影响读取 |
+| **NFC刷卡** | 不依赖可见字迹；近距离刷卡 | 耐工艺标签待选；脱落/换卡可错绑；接口需适配 |
+| **手机OCR** | 手机兼做相机和终端；硬件较少 | 字迹、光照影响识别；需人工复核；手机进区需QA确认 |
 
-**推荐前提：新制二维码及安装方式通过清洗、灭菌后的适用性验证。**
-
-## B 先统一比较口径
-
-```kv cols=2
-已确认规模: 近期2个生产车间，每车间约150套
-二维码要求: 新制作并安装300个，对应300套
-现场条件: 各操作点均需采购操作终端
-标识条件: 二维码或ID卡均随衣物清洗和灭菌
-NFC采购: 360枚，其中60枚为20%备用
-已确认点位: 全厂集中处理，共用3个操作点
-终端形态: 二维码用PDA；NFC用固定台；OCR用专用手机
-OCR配置: 新购3台安卓手机，厂内服务器承担识别
-工艺状态: 灭菌方式和参数仍未确认
-人工费率: 1,500—2,500元/人天
-时间口径: 1人天为8小时，不是日历天
+```html
+&lt;div class=&quot;efficiency&quot; aria-label=&quot;手工和系统效率示例&quot;&gt;
+  &lt;div class=&quot;eff-head&quot;&gt;&lt;h3&gt;处理300套的记录时间&lt;/h3&gt;&lt;span&gt;示例假设 · 非实测&lt;/span&gt;&lt;/div&gt;
+  &lt;p class=&quot;eff-intro&quot;&gt;可修改每套耗时，比较结果会同步变化。&lt;/p&gt;
+  &lt;div class=&quot;eff-row&quot; data-key=&quot;manual&quot;&gt;&lt;div class=&quot;eff-label&quot;&gt;&lt;b&gt;手工记录&lt;/b&gt;&lt;label&gt;&lt;input id=&quot;time-manual&quot; type=&quot;number&quot; min=&quot;0.1&quot; max=&quot;300&quot; step=&quot;0.1&quot; value=&quot;30&quot; aria-label=&quot;人工每套记录秒数&quot;&gt; 秒/套&lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;bar&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;eff-result&quot;&gt;&lt;strong&gt;&lt;/strong&gt;&lt;small&gt;&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;eff-row&quot; data-key=&quot;qr&quot;&gt;&lt;div class=&quot;eff-label&quot;&gt;&lt;b&gt;二维码PDA&lt;/b&gt;&lt;label&gt;&lt;input id=&quot;time-qr&quot; type=&quot;number&quot; min=&quot;0.1&quot; max=&quot;300&quot; step=&quot;0.1&quot; value=&quot;8&quot; aria-label=&quot;二维码每套记录秒数&quot;&gt; 秒/套&lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;bar&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;eff-result&quot;&gt;&lt;strong&gt;&lt;/strong&gt;&lt;small&gt;&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;eff-row&quot; data-key=&quot;nfc&quot;&gt;&lt;div class=&quot;eff-label&quot;&gt;&lt;b&gt;NFC刷卡&lt;/b&gt;&lt;label&gt;&lt;input id=&quot;time-nfc&quot; type=&quot;number&quot; min=&quot;0.1&quot; max=&quot;300&quot; step=&quot;0.1&quot; value=&quot;6&quot; aria-label=&quot;NFC每套记录秒数&quot;&gt; 秒/套&lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;bar&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;eff-result&quot;&gt;&lt;strong&gt;&lt;/strong&gt;&lt;small&gt;&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;eff-row&quot; data-key=&quot;ocr&quot;&gt;&lt;div class=&quot;eff-label&quot;&gt;&lt;b&gt;手机OCR&lt;/b&gt;&lt;label&gt;&lt;input id=&quot;time-ocr&quot; type=&quot;number&quot; min=&quot;0.1&quot; max=&quot;300&quot; step=&quot;0.1&quot; value=&quot;15&quot; aria-label=&quot;OCR每套记录秒数&quot;&gt; 秒/套&lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;bar&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;eff-result&quot;&gt;&lt;strong&gt;&lt;/strong&gt;&lt;small&gt;&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;p id=&quot;eff-warning&quot; role=&quot;alert&quot; hidden&gt;请填写0.1—300秒的有效数值。&lt;/p&gt;
+  &lt;p class=&quot;eff-note&quot;&gt;300套 × 每套秒数 ÷ 60＝分钟。默认秒数不是设备性能承诺。&lt;br&gt;只比较单件记录，不含共同批次登记、QA审核及洗灭时长。&lt;/p&gt;
+&lt;/div&gt;
 ```
 
-```callout warn 所有金额都是预算假设，尚未取得供应商报价
-300套来自用户提供的近期生产规模。
-全厂共用3点、300个二维码均已确认。
-标识材质、制作安装及设备价格仍需正式询价。
-NFC耐工艺标签型号尚未确定，价格只是占位。
-区间低端和高端不能当作实际成交预测。
+```callout info 实测后再决定采购
+取20—30套衣物，计入拿取、找码/摊平、重试及核对时间。
+同时记录漏记、错绑和误识别，不只比较速度。
+二维码与NFC的耐清洗灭菌能力、笔墨适用性均须验证。
 ```
 
-## C 硬件要买什么，预计多少钱
-
-**单位：万元。均包含新操作终端和1套包装外码打印设备。**
-
-按全厂3个操作点采购设备，不按两个车间重复配置。
-
-| 方案 | 主要采购内容 | 硬件预算 |
-|---|---|---:|
-| 二维码PDA | 3台PDA、新制300个二维码及固定材料 | **1.25—3.15** |
-| NFC刷卡 | 3套读卡设备及终端、360枚候选标签 | **1.75—3.89** |
-| 手机OCR | 3台专用手机、支架补光、充电及标识耗材 | **0.80—1.97** |
-
-下面拆分全厂集中共用3点的采购预算。
-
-### 二维码采购拆分
-
-| 项目 | 数量与单价假设 | 小计（元） |
-|---|---|---:|
-| 带屏二维扫码PDA | 3台 × 2,500—6,000元 | 7,500—18,000 |
-| 充电座、电池和防护配件 | 1批 | 1,000—2,500 |
-| 衣物二维码及固定材料占位 | 300个 × 5—15元 | 1,500—4,500 |
-| 包装打印机及首批耗材 | 1套 | 2,500—6,500 |
-| **合计** | 新制300个二维码，安装人工另行核价 | **12,500—31,500** |
-
-### NFC采购拆分
-
-| 项目 | 数量与单价假设 | 小计（元） |
-|---|---|---:|
-| 读卡器 | 3台 × 300—1,000元 | 900—3,000 |
-| 操作终端 | 3台 × 2,500—4,000元 | 7,500—12,000 |
-| 耐工艺标签占位 | 360枚 × 15—40元 | 5,400—14,400 |
-| 固定材料及小批装配占位 | 随标签数量调整的预算占位 | 1,200—3,000 |
-| 包装打印机及首批耗材 | 1套 | 2,500—6,500 |
-| **合计** | 普通卡不能替代工艺合格标签 | **17,500—38,900** |
-
-### 手机OCR采购拆分
-
-| 项目 | 数量与单价假设 | 小计（元） |
-|---|---|---:|
-| 专用安卓手机 | 3台 × 1,500—3,500元 | 4,500—10,500 |
-| 补光和拍照支架 | 3套 × 200—500元 | 600—1,500 |
-| 充电及防护配件 | 1批 | 300—900 |
-| 标识笔及试验耗材占位 | 1批 | 100—300 |
-| 包装打印机及首批耗材 | 1套 | 2,500—6,500 |
-| **合计** | 手机兼做相机和操作终端 | **8,000—19,700** |
-
-手机价格是普通商用设备的预算占位，不是洁净区准入结论。
-若报价已含充电配件，应扣除重复项目。
-与原相机加电脑方案相比，硬件预算低4,500—6,000元。
-这是估算区间端点之差，不是已验证的采购节省。
-
-**三种方案均只计1套包装设备，为2,500—6,500元。**
-若需要两套，三种方案都再加同样费用；无需新增则扣除。
-
-二维码的5—15元是标签及固定材料的新预算占位。
-已确认全部新制并安装，不再采用旧码抵扣假设。
-5—15元仅计标签及固定材料，不含安装人工。
-印制、缝装或热封及工艺试验，应取得完整报价。
-
-衣物二维码为300个。NFC比较方案按360枚采购。
-其中60枚是预算采用的备用量，不是额外衣物数。
-
-PDA自带屏幕和计算能力，不再重复买电脑。
-手机OCR同时利用手机摄像头、屏幕和系统，不再采购相机及电脑。
-NFC固定读卡器仍需配套操作终端。
-如果NFC也要移动作业，应改报带屏NFC终端。
-
-手机也能扫二维码，但本页二维码方案仍按专业PDA报价。
-两种终端的扫描体验与洁净区适用性，应实机比较。
-
-## D 识别功能开发和验证费用
-
-**这里按3个操作点比较识别部分，不是完整正式系统。**
-
-| 方案 | 合计人天 | 人工费用（万元） |
-|---|---:|---:|
-| 二维码PDA | **2—3** | **0.30—0.75** |
-| NFC刷卡 | **6—11** | **0.90—2.75** |
-| 手机OCR | **12—23** | **1.80—5.75** |
-
-- 二维码：开发2—3人天，适配PDA及扫码输入。
-- NFC：开发4—7人天，新增专项验证2—4人天。
-- OCR：开发8—15人天，新增专项验证4—8人天。
-
-二维码常规验证已计入共用系统验证，不是免验证。
-NFC增加读卡接入、电子ID绑定和换卡控制。
-手机OCR增加拍照、图像上传、识别部署和人工复核。
-默认在厂内服务器识别，复用可用算力，不调用外部云OCR。
-若需新增推理服务器或商业许可，应另计费用。
-手机端独立推理属于另一技术路线，需单独评估。
-
-手机替代了相机和电脑，不替代OCR软件开发及验证。
-仍按一种安卓机型及浏览器估算，多平台兼容另估。
-OCR估算不含专用手写模型训练，也不承诺识别准确率。
-NFC若需非标准SDK或多种终端适配，应另估工作量。
-
-### 采集部分小计
-
-| 方案 | 硬件＋识别专属开发/验证（万元） |
-|---|---:|
-| 二维码PDA | **1.55—3.90** |
-| NFC刷卡 | **2.65—6.64** |
-| 手机OCR | **2.60—7.72** |
-
-**本表不含共用系统开发，也未加15%人天预留。**
-
-300套不需要把软件开发人天翻倍。
-全厂共用3点，不增加第二套车间部署预算。
-
-## E 优缺点和实物风险
-
-| 维度 | 二维码PDA | NFC刷卡 | 手机OCR |
-|---|---|---|---|
-| 标识配置 | 新制并安装300个二维码 | 新增电子标签和绑定 | 新增书写及维护规则 |
-| 操作要求 | 露出并对准二维码 | 将正确标签靠近读区 | 找字迹、摊平、拍照、复核 |
-| 优点 | 接入较直接，PDA可移动 | 不依赖可见字符清晰度 | 手机可移动，兼做拍照和操作终端 |
-| 主要局限 | 褶皱、污损、褪色及遮挡 | 标签耐工艺、互换/脱落、读卡接入 | 字迹差异、手持角度、光照及误识别 |
-| 隔袋读取 | 需透视读码或绑定外包装码 | 可能可读，须实测包装和读区 | 看不见字迹就无法识别 |
-| H5接入 | 优先键盘式扫码输出 | 取决于读卡器、协议和软件接口 | 网页拍照后还需识别和业务校验 |
-| 后续维护 | 补标、电池、设备清洁 | 换标、绑定核对、驱动或SDK | 手机清洁、成像条件、模型及复核规则 |
-
-```callout warn “识别成功”不等于“识别了正确实物”
-NFC卡可能挂错衣服。
-OCR可能读成另一件真实存在的编号。
-二维码标签也可能绑定错误。
-三种方案都要核对首次绑定及换标记录。
+```html
+&lt;style&gt;
+:root{--deck-green:#176650;--deck-ink:#183b31;--deck-muted:#61796e;--deck-line:#dbe6df;--deck-amber:#94641e}
+html,body{margin:0!important;background:#eaf0ec!important;color:var(--deck-ink)!important;font-family:-apple-system,BlinkMacSystemFont,&quot;PingFang SC&quot;,&quot;Microsoft YaHei&quot;,sans-serif!important;overflow:hidden;height:100%;min-height:100vh}
+.am-toolbar,.am-head,.am-toc,.am-colophon,.am-panel-id,.am-panel-head button{display:none!important}
+main.am-doc{min-height:calc(100vh - 80px)!important;display:block!important;position:relative!important;max-width:none!important;width:100%!important;margin:0!important;padding:0!important}
+.am-doc-layout,.am-doc-body{display:block!important;width:100%!important;max-width:none!important;margin:0!important;padding:0!important}
+.am-panel{display:none!important;position:absolute!important;box-sizing:border-box!important;width:1600px!important;height:900px!important;margin:0!important;padding:42px 60px 48px!important;border:0!important;border-radius:0!important;background:#fff!important;box-shadow:0 12px 50px #17382a14;overflow:hidden!important;transform-origin:top left!important}
+.am-panel.is-active{display:block!important}
+.am-panel-head{padding:0 0 21px!important;margin:0 0 20px!important;border:0!important;border-bottom:3px solid var(--deck-green)!important;background:transparent!important;min-height:0!important}
+.am-panel-head h2{margin:0!important;padding:0!important;font-family:inherit!important;font-size:40px!important;line-height:1.25!important;font-weight:700!important;color:var(--deck-ink)!important;letter-spacing:-1px}
+.am-panel-body{padding:0!important;margin:0!important;display:block!important}
+.am-panel-body&gt;.am-md&gt;p{font-size:23px!important;line-height:1.5!important;margin:10px 0!important;font-family:inherit!important}
+.am-panel-body h3{font-size:25px!important;line-height:1.3!important;margin:22px 0 10px!important;font-family:inherit!important;color:var(--deck-green)!important}
+.am-md,.am-md table{font-family:inherit!important}
+.am-table-wrap{margin:20px 0!important;border:0!important;overflow:auto!important}
+.am-md table{table-layout:fixed!important;width:100%!important;border-collapse:collapse!important;font-size:23px!important;line-height:1.4!important;color:var(--deck-ink)!important}
+.am-md table th{background:#eaf3ed!important;color:var(--deck-green)!important;font-size:20px!important;text-align:left!important;font-weight:650!important;border:0!important;border-bottom:2px solid #b4cbbb!important;padding:12px 16px!important;white-space:normal!important}
+.am-md table td{padding:13px 16px!important;border:0!important;border-bottom:1px solid var(--deck-line)!important;vertical-align:middle!important;background:white!important;white-space:normal!important;overflow-wrap:anywhere!important}
+#panel-A table th:nth-child(1){width:33%}#panel-A table th:nth-child(2){width:18%}#panel-A table th:nth-child(3){width:26%}#panel-A table th:nth-child(4){width:23%}
+#panel-A table tbody tr:first-child td{background:#f4f9f5!important}
+#panel-A table td strong{font-size:28px!important;font-weight:700!important}
+.am-callout{box-sizing:border-box!important;padding:12px 16px!important;margin:20px 0 0!important;border:0!important;border-left:4px solid #d3b375!important;background:#fbf7ee!important;border-radius:0!important;font-family:inherit!important}
+.am-callout-title{font-size:18px!important;line-height:1.4!important;font-weight:700!important;margin:0 0 3px!important}
+.am-callout-body p{font-size:18px!important;line-height:1.45!important;margin:0!important}
+#panel-B .am-panel-body{display:grid!important;grid-template-columns:1.02fr 1fr;gap:24px 42px!important;align-items:start!important}
+#panel-B .am-panel-body&gt;.am-md{min-width:0;grid-column:1}
+#panel-B .am-panel-body&gt;.am-md&gt;p{font-size:22px!important;margin:0 0 18px!important}
+#panel-B table{font-size:23px!important}
+#panel-B table th:first-child{width:25%}#panel-B table th:nth-child(2){width:31%}#panel-B table th:nth-child(3){width:44%}
+#panel-B table td{padding:25px 13px!important;vertical-align:top!important}
+#panel-B .am-callout{grid-column:1/-1;margin-top:0!important;border-color:#83ad96!important;background:#eff6f1!important}
+.efficiency{grid-column:2;grid-row:1;min-width:0;border-left:1px solid var(--deck-line);padding-left:32px;color:var(--deck-ink)}
+.eff-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.eff-head h3{font-size:25px!important;margin:0!important}.eff-head&gt;span{font-size:17px;font-weight:650;color:var(--deck-amber)}
+.eff-intro{font-size:19px;line-height:1.5;color:var(--deck-muted);margin:7px 0 12px}
+.eff-row{padding:11px 0;border-bottom:1px solid var(--deck-line)}.eff-label{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:22px}.eff-label label{font-size:18px;color:var(--deck-muted);white-space:nowrap}
+.eff-label input{box-sizing:border-box;width:76px;min-height:38px;padding:2px 7px;border:1px solid #bed0c3;border-radius:4px;font:inherit;font-weight:600;color:var(--deck-ink);background:#fff;text-align:right}.eff-label input:focus{outline:3px solid #a4cbb7;outline-offset:2px}.eff-label input[aria-invalid=true]{border-color:#bd5346}
+.bar{height:9px;background:#edf2ee;margin:8px 0;border-radius:2px;overflow:hidden}.bar span{display:block;height:100%;background:var(--deck-green);width:0;transition:width .15s}.eff-row[data-key=manual] .bar span{background:#8a9a91}.eff-row[data-key=ocr] .bar span{background:#b28a52}
+.eff-result{display:flex;justify-content:space-between;gap:8px;align-items:center;line-height:1.2}.eff-result strong{font-size:23px}.eff-result small{font-size:18px;color:var(--deck-muted)}.eff-result small.worse{color:#b6473e}
+.eff-note{font-size:17px;line-height:1.5;margin:13px 0 0;color:var(--deck-muted)}#eff-warning{font-size:17px;color:#b6473e;margin:7px 0}
+.am-panel::after{content:attr(data-page) &#39; / 02     洁净服识别方案 · 2026-10-19&#39;;position:absolute;bottom:18px;right:60px;font-size:16px;letter-spacing:.5px;color:#778c80}
+.deck-nav{position:fixed;z-index:100;bottom:14px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #cddbd1;padding:5px 8px;border-radius:8px;box-shadow:0 4px 18px #13382810}.deck-nav button{font:inherit;font-size:14px;min-height:34px;cursor:pointer;padding:5px 12px;border:0;background:#eef4ef;border-radius:5px;color:var(--deck-ink)}.deck-nav button:disabled{opacity:.35;cursor:default}.deck-nav output{font-size:14px;min-width:45px;text-align:center}.deck-nav button:focus-visible{outline:3px solid #8dbda4}
+@media(max-width:959px){#panel-A .am-table-wrap::before{content:&quot;左右滑动查看完整成本表&quot;;display:block;font-size:12px;color:#61796e;margin-bottom:8px}html,body{overflow:auto!important}main.am-doc{padding:12px 12px 75px!important;box-sizing:border-box}.am-panel{position:relative!important;left:auto!important;top:auto!important;margin:0!important;width:100%!important;height:auto!important;min-height:calc(100vh - 100px);padding:24px 17px 55px!important;transform:none!important;overflow:visible!important}.am-panel-head{padding-bottom:14px!important;margin-bottom:17px!important}.am-panel-head h2{font-size:27px!important;letter-spacing:-.5px}.am-panel-body&gt;.am-md&gt;p{font-size:16px!important;line-height:1.7!important}.am-panel-body h3{font-size:20px!important}.am-md table{min-width:640px!important;font-size:17px!important}.am-md table th{font-size:15px!important;padding:10px!important}.am-md table td{padding:15px 10px!important}#panel-A table td strong{font-size:19px!important}.am-callout{padding:11px!important}.am-callout-title{font-size:16px!important}.am-callout-body p{font-size:14px!important;line-height:1.7!important}#panel-B .am-panel-body{display:block!important}#panel-B .am-panel-body&gt;.am-md&gt;p{font-size:16px!important}#panel-B table{min-width:0!important;font-size:15px!important}#panel-B table td{padding:14px 10px!important}.efficiency{border:0;border-top:1px solid var(--deck-line);padding:18px 0;margin-top:20px}.eff-head{align-items:start;flex-direction:column;gap:5px}.eff-head h3{font-size:21px!important}.eff-head&gt;span{font-size:14px}.eff-intro{font-size:15px}.eff-label{font-size:17px}.eff-label label{font-size:15px}.eff-label input{min-height:44px;width:70px}.eff-result strong{font-size:20px}.eff-result small{font-size:14px}.eff-note{font-size:14px}.am-panel::after{bottom:16px;right:17px;font-size:11px}.deck-nav{width:max-content;max-width:95vw;gap:7px;bottom:8px}.deck-nav button{min-height:40px;padding:5px 10px}}
+@media print{@page{size:1600px 900px;margin:0}html,body{background:white!important;overflow:visible!important;width:1600px!important}main.am-doc{padding:0!important;margin:0!important;width:1600px!important}.am-panel{display:block!important;position:relative!important;left:0!important;top:0!important;transform:none!important;width:1600px!important;height:900px!important;margin:0!important;box-shadow:none!important;break-after:page;page-break-after:always}.am-panel:last-of-type{break-after:auto;page-break-after:auto}.deck-nav{display:none!important}.bar span{print-color-adjust:exact;-webkit-print-color-adjust:exact}.am-panel-head{break-after:avoid}.am-md table tr{break-inside:avoid}#panel-B .am-panel-body{display:block!important;position:relative!important;height:710px!important}#panel-B .am-panel-body&gt;.am-md{position:absolute!important;left:0;top:0;width:726px!important}#panel-B .efficiency{position:absolute!important;top:0;right:0;width:712px!important;box-sizing:border-box;margin:0!important}#panel-B .am-callout{position:absolute!important;left:0;bottom:0;width:100%!important}}
+&lt;/style&gt;
+&lt;script&gt;
+window.addEventListener(&#39;DOMContentLoaded&#39;,()=&gt;{
+ const slides=[...document.querySelectorAll(&#39;.am-panel&#39;)];let current=0;
+ const nav=document.createElement(&#39;nav&#39;);nav.className=&#39;deck-nav&#39;;nav.setAttribute(&#39;aria-label&#39;,&#39;幻灯片翻页&#39;);nav.innerHTML=&#39;&lt;button id=&quot;deck-prev&quot; aria-label=&quot;上一页&quot;&gt;← 上一页&lt;/button&gt;&lt;output id=&quot;deck-count&quot; aria-live=&quot;polite&quot;&gt;1 / 2&lt;/output&gt;&lt;button id=&quot;deck-next&quot; aria-label=&quot;下一页&quot;&gt;下一页 →&lt;/button&gt;&lt;button id=&quot;deck-print&quot; aria-label=&quot;打印两页&quot;&gt;打印&lt;/button&gt;&#39;;document.body.append(nav);
+ const prev=document.getElementById(&#39;deck-prev&#39;),next=document.getElementById(&#39;deck-next&#39;),count=document.getElementById(&#39;deck-count&#39;);
+ function fit(){const mobile=innerWidth&lt;960,scale=Math.min((innerWidth-48)/1600,(innerHeight-100)/900,1.2);slides.forEach((s,i)=&gt;{s.dataset.page=String(i+1).padStart(2,&#39;0&#39;);s.style.transform=mobile?&#39;none&#39;:`scale(${Math.max(.1,scale)})`;s.style.left=mobile?&#39;0&#39;:`${(innerWidth-1600*scale)/2}px`;s.style.top=mobile?&#39;0&#39;:&#39;24px&#39;;});}
+ function show(i){current=Math.max(0,Math.min(slides.length-1,i));slides.forEach((s,j)=&gt;{s.classList.toggle(&#39;is-active&#39;,j===current);s.setAttribute(&#39;aria-hidden&#39;,String(j!==current));});prev.disabled=current===0;next.disabled=current===slides.length-1;count.textContent=`${current+1} / ${slides.length}`;fit();window.scrollTo(0,0);}
+ prev.onclick=()=&gt;show(current-1);next.onclick=()=&gt;show(current+1);document.getElementById(&#39;deck-print&#39;).onclick=()=&gt;window.print();
+ document.addEventListener(&#39;keydown&#39;,e=&gt;{if(/INPUT|TEXTAREA|SELECT/.test(e.target.tagName))return;if(e.key===&#39;ArrowRight&#39;||e.key===&#39;PageDown&#39;){e.preventDefault();show(current+1);}if(e.key===&#39;ArrowLeft&#39;||e.key===&#39;PageUp&#39;){e.preventDefault();show(current-1);}});window.addEventListener(&#39;resize&#39;,fit);
+ const keys=[&#39;manual&#39;,&#39;qr&#39;,&#39;nfc&#39;,&#39;ocr&#39;],inputs=Object.fromEntries(keys.map(k=&gt;[k,document.getElementById(&#39;time-&#39;+k)]));
+ const fmt=n=&gt;Number(n.toFixed(1)).toLocaleString(&#39;zh-CN&#39;);
+ function update(){const times={};let valid=true;keys.forEach(k=&gt;{const x=inputs[k],n=Number(x.value),ok=x.value.trim()!==&#39;&#39;&amp;&amp;Number.isFinite(n)&amp;&amp;n&gt;=.1&amp;&amp;n&lt;=300;x.setAttribute(&#39;aria-invalid&#39;,String(!ok));if(!ok)valid=false;times[k]=n;});document.getElementById(&#39;eff-warning&#39;).hidden=valid;const max=Math.max(...Object.values(times));keys.forEach(k=&gt;{const row=document.querySelector(`[data-key=&quot;${k}&quot;]`),result=row.querySelector(&#39;strong&#39;),note=row.querySelector(&#39;small&#39;);row.querySelector(&#39;.bar span&#39;).style.width=valid?`${times[k]/max*100}%`:&#39;0&#39;;if(!valid){result.textContent=&#39;—&#39;;note.textContent=&#39;请检查输入&#39;;return;}const minutes=times[k]*300/60;result.textContent=fmt(minutes)+&#39; 分钟&#39;;note.classList.remove(&#39;worse&#39;);if(k===&#39;manual&#39;){note.textContent=&#39;人工对照基线&#39;;return;}const delta=(times.manual-times[k])*300/60;note.textContent=delta&gt;=0?&#39;比人工少 &#39;+fmt(delta)+&#39; 分钟&#39;:&#39;比人工多 &#39;+fmt(-delta)+&#39; 分钟&#39;;if(delta&lt;0)note.classList.add(&#39;worse&#39;);});}
+ Object.values(inputs).forEach(input=&gt;input.addEventListener(&#39;input&#39;,update));update();show(0);
+});
+&lt;/script&gt;
 ```
-
-### 清洗和灭菌是共同约束
-
-标识随衣物灭菌，手机不随衣物灭菌。
-QA需确认手机进区、清洁消毒及戴手套操作是否可行。
-
-普通PVC卡、普通NFC贴纸不能默认耐反复灭菌。
-标签的芯片、封装、天线和固定材料应一起验证。
-记号笔需评估掉色、扩散及对衣物性能的影响。
-“防水”或“永久性”不能替代实际工艺证据。
-
-封包后不要为识码而破坏无菌屏障。
-必要时在封包前绑定外包装码和袋内成员。
-
-**三种方式只识别身份。实际工序完成并确认后，系统才更新次数。**
-
-## F 完整正式系统的预算边界
-
-现有Demo确认了业务方向，尚未完成正式后台及验证。
-三种方案共用批次、计数、放行、权限、审计和恢复功能。
-
-| 共用部分 | 规划工作量 |
-|---|---:|
-| 共用开发及工程测试 | 42—62人天 |
-| 共用验证支持 | 18—28人天 |
-| **共用合计** | **60—90人天** |
-
-加入各方案识别工作，再加15%人天预留并向上取整：
-
-| 方案 | 含预留总人天 | 项目预算（万元） |
-|---|---:|---:|
-| 二维码PDA | 72—107 | **12.05—29.90** |
-| NFC＋新终端 | 76—117 | **13.15—33.14** |
-| 手机OCR | 83—130 | **13.25—34.47** |
-
-项目预算＝含预留的人天费用＋硬件采购。
-二维码安装人工及材料工艺试验尚待询价，未计入总额。
-
-**本表已经包含前面的识别工作和硬件，不要再次相加。**
-
-未计新增后台或OCR推理服务器、网络施工及额外许可。
-特殊可消毒手机或更高防护等级设备需重新报价。
-材料工艺试验、现场人员工时、税运差旅也需另核实。
-报价区间重叠，最终应按相同范围比较供应商报价。
-
-### 还要看每次操作耗时
-
-以下仅为敏感性示例，不是实测结果：
-
-| 假设 | 计算结果 |
-|---|---|
-| 300套，每周周转2次，每套识别3次，按50周计 | 每年90,000次识别 |
-| 每次操作多4秒 | 每年多100小时 |
-| 人工按60元/小时占位 | 每年多6,000元，三年多18,000元 |
-
-计时应包括拿取、翻找、摊平、重试及复核。
-只测扫码引擎的响应时间，不能反映现场成本。
-
-## G 建议如何落地
-
-```timeline v
-01 | 先确认灭菌工艺 | 明确方法、温度、压力、时长和重复次数。
-*02 | 借测一台二维码PDA | 用20—30件代表性衣物验证读取和全操作耗时。
-03 | 按需做NFC对照 | 若二维码明显不便，再测10—20枚候选标签。
-04 | 用专用手机试验OCR | 确认进区与笔墨适用，再测试拍摄、误识别和复核。
-05 | 同口径询价并确认 | 业务、QA和IT核对适用性后确定采购。
-```
-
-短期试验不能证明标签全寿命耐久性。
-已确认集中共用3点，并新制安装300个二维码。
-正式采购前需确认灭菌方式、标签材质和安装工艺。
-
-本页按用户给出的300个标识估算。
-如果一套中的衣服、鞋套会分开流转，应分别编码。
-此时实际标识数将大于300，需重新清点。
-
-## H 资料依据与使用范围
-
-**费用来源：内部工程预算假设，未取得有效采购报价。**
-设备接口事实与费用假设分开使用。
-
-| 官方资料 | 本页引用的结论 |
-|---|---|
-| [ACS ACR122U API](https://www.acs.com.hk/download-manual/419/API-ACR122U-2.04.pdf) | PC/SC与CCID接口，不能默认当作键盘扫码枪 |
-| [MDN Web NFC](https://developer.mozilla.org/en-US/docs/Web/API/Web_NFC_API) | Web NFC有平台和格式限制，不是通用USB读卡接口 |
-| [Chainway C72规格](https://www.chainway.net/Products/Info/42) | 二维码与NFC可同机，采购须核对选配及工艺适用性 |
-| [NXP标签芯片数据表](https://www.nxp.com/docs/en/data-sheet/NTAG213_215_216.pdf) | 芯片温度参数不能代替成品标签灭菌循环验证 |
-| [PaddleOCR PP-OCRv5](https://www.paddleocr.ai/main/en/version3.x/algorithm/PP-OCRv5/PP-OCRv5.html) | 支持手写识别，不代表本项目布料编号准确率 |
-
-本页已获授权公开预算，用于讨论和供应商沟通。
-它不是采购规格书；新增二维码单价仍为预算占位。
-尚未试用设备，也未完成材料工艺验证或正式系统验证。
-下一版应以手机样机、现场试验及供应商书面报价更新。
 </textarea>
 <script>
 (() => {

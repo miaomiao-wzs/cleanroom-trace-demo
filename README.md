@@ -12,7 +12,7 @@
 - `demo.html`：可新增模拟数据的 H5 原型。
 - `business.html`：业务需求说明书，调研基线 V0.1。
 - `functional.html`：功能说明书，调研基线 V0.1。
-- `identification-costs.html`：[三种实物识别方案成本对比](https://miaomiao-wzs.github.io/cleanroom-trace-demo/identification-costs.html)，两个车间共300套，新制安装300个二维码，全厂集中共用3个操作点，2026-10-16讨论版V1.3，OCR改用3台专用手机，不另购相机及电脑。
+- `identification-costs.html`：[成本与效率两页摘要](https://miaomiao-wzs.github.io/cleanroom-trace-demo/identification-costs.html)，2026-10-19 V2.0。保留300套/3点/手机OCR预算，新增可调整的手工与系统记录效率示例；示例不是实测值。
 
 无需安装依赖或构建。可下载仓库后用浏览器打开 index.html，或由静态服务器托管。
 
