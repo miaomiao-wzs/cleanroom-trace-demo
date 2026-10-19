@@ -726,7 +726,7 @@ html[data-theme="paper"] .am-md table { font-family: var(--font-sans); }
 <button class="am-btn" type="button" data-am="copy" data-done="已复制 ✓">复制源稿</button>
 </div>
 <main class="am-doc">
-<header class="am-head"><h1>洁净服识别方案 · 两页摘要</h1><p class="am-sub">300套 · 全厂共用3点 · 手机OCR</p><div class="am-head-meta"><span><b>版本</b>两页汇报版 V2.0</span><span><b>日期</b>2026-10-19</span></div></header>
+<header class="am-head"><h1>洁净服识别方案 · 两页摘要</h1><p class="am-sub">300套 · 全厂共用3点 · 手机OCR</p><div class="am-head-meta"><span><b>版本</b>检查与记录工时 V2.1</span><span><b>日期</b>2026-10-19</span></div></header>
 <div class="am-doc-layout am-doc-layout--notoc">
 <div class="am-doc-body">
 <section class="am-panel" id="panel-A">
@@ -765,14 +765,14 @@ html[data-theme="paper"] .am-md table { font-family: var(--font-sans); }
 <p>范围包括档案、批次、计数、放行、权限、审计、报表和恢复验证。</p>
 <p>完整项目已含共用工作、方案专属工作、15%人工预留和硬件。<strong>不能重复相加。</strong></p>
 </div>
-<div class="am-callout am-callout--warn" role="note"><div class="am-callout-title">预算口径，不是供应商报价</div><div class="am-callout-body am-md"><p>费率1,500—2,500元/人天；二维码常规验证已在共用范围。
+<div class="am-callout am-callout--warn" role="note"><div class="am-callout-title">金额沿用前版，新增逐件检查和打印的开发增量待估算</div><div class="am-callout-body am-md"><p>费率1,500—2,500元/人天；二维码常规验证已在共用范围。
 硬件均含1套包装打印设备及首批耗材。*NFC含60枚备用标签。
 未计二维码安装人工、材料工艺试验、新服务器、网络、额外许可及税运差旅。</p>
 </div></div></div>
 </section>
 <section class="am-panel" id="panel-B">
 <header class="am-panel-head"><span class="am-panel-id">B</span><h2>优缺点与记录效率</h2></header>
-<div class="am-panel-body"><div class="am-md"><p><strong>系统主要减少抄写与累计；识别可靠性仍须实物验证。</strong></p>
+<div class="am-panel-body"><div class="am-md"><p><strong>逐套逐双检查仍需做；系统减少重复填写和人工累计。</strong></p>
 <div class="am-table-wrap"><table>
 <thead>
 <tr>
@@ -798,19 +798,19 @@ html[data-theme="paper"] .am-md table { font-family: var(--font-sans); }
 </tr>
 </tbody></table></div>
 </div>
+<div id="physical-controls" class="physical-controls"><h3>四种方式都要做的现场动作</h3><label>逐套/逐双检查、整理（秒/套）<input id="physical-seconds" type="number" min="0" max="10000" step="1" value="20" aria-label="每套共同现场动作秒数"></label><label>各批次公共操作合计（分钟）<input id="physical-batch" type="number" min="0" max="10000" step="1" value="50" aria-label="全部批次公共现场操作分钟"></label><p>区域设备检查、结束清洁等；20秒与50分钟均待实测。</p></div>
 <div class="efficiency" aria-label="手工和系统效率示例">
-  <div class="eff-head"><h3>300套单环节记录工时</h3><span>示例假设 · 非实测</span></div>
-  <p class="eff-intro">可修改每套耗时，比较结果会同步变化。</p>
+  <div class="eff-head"><h3>300套检查与记录工时</h3><span>示例假设 · 非实测</span></div>
+  <p class="eff-intro">总工时＝共同现场动作＋记录时间。</p><p id="physical-total" class="eff-common"></p>
   <div class="eff-row" data-key="manual"><div class="eff-label"><b>手工记录</b><label><input id="time-manual" type="number" min="0.1" max="300" step="0.1" value="30" aria-label="人工每套记录秒数"> 秒/套</label></div><div class="bar"><span></span></div><div class="eff-result"><strong></strong><small></small></div></div>
   <div class="eff-row" data-key="qr"><div class="eff-label"><b>二维码PDA</b><label><input id="time-qr" type="number" min="0.1" max="300" step="0.1" value="8" aria-label="二维码每套记录秒数"> 秒/套</label></div><div class="bar"><span></span></div><div class="eff-result"><strong></strong><small></small></div></div>
   <div class="eff-row" data-key="nfc"><div class="eff-label"><b>NFC刷卡</b><label><input id="time-nfc" type="number" min="0.1" max="300" step="0.1" value="6" aria-label="NFC每套记录秒数"> 秒/套</label></div><div class="bar"><span></span></div><div class="eff-result"><strong></strong><small></small></div></div>
   <div class="eff-row" data-key="ocr"><div class="eff-label"><b>手机OCR</b><label><input id="time-ocr" type="number" min="0.1" max="300" step="0.1" value="15" aria-label="OCR每套记录秒数"> 秒/套</label></div><div class="bar"><span></span></div><div class="eff-result"><strong></strong><small></small></div></div>
-  <p id="eff-warning" role="alert" hidden>请填写0.1—300秒的有效数值。</p>
-  <p class="eff-note">300套 × 每套秒数 ÷ 60＝分钟。默认秒数不是设备性能承诺。<br>按单人顺序操作；不含批次登记、QA审核及洗灭时长。</p>
+  <p id="eff-warning" role="alert" hidden>记录秒数需为0.1—300；现场动作输入需为0—10000。</p>
+  <p class="eff-note">总＝现场＋300套×记录秒数÷60。示例非实测。<br>记录含批次填写/打印分摊；未计设备运行、QA审核及未定破损处置。</p>
 </div>
-<div class="am-callout am-callout--info" role="note"><div class="am-callout-title">实测后再决定采购</div><div class="am-callout-body am-md"><p>取20—30套衣物，计入拿取、找码/摊平、重试及核对时间。
-同时记录漏记、错绑和误识别，不只比较速度。
-二维码与NFC的耐清洗灭菌能力、笔墨适用性均须验证。</p>
+<div class="am-callout am-callout--info" role="note"><div class="am-callout-title">实测后再决定采购</div><div class="am-callout-body am-md"><p>按完整清洗记录试测20—30套：现场动作、批次填写、逐件填写和打印分别计时。
+不得把环境清洁、破损检查、整理等算作系统省掉的时间。</p>
 </div></div>
 <style>
 :root{--deck-green:#176650;--deck-ink:#183b31;--deck-muted:#61796e;--deck-line:#dbe6df;--deck-amber:#94641e}
@@ -839,14 +839,14 @@ main.am-doc{min-height:calc(100vh - 80px)!important;display:block!important;posi
 #panel-B .am-panel-body{display:grid!important;grid-template-columns:1.02fr 1fr;gap:24px 42px!important;align-items:start!important}
 #panel-B .am-panel-body>.am-md{min-width:0;grid-column:1}
 #panel-B .am-panel-body>.am-md>p{font-size:22px!important;margin:0 0 18px!important}
-#panel-B table{font-size:23px!important}
+#panel-B table{font-size:21px!important}#panel-B .am-table-wrap{margin:12px 0!important}
 #panel-B table th:first-child{width:25%}#panel-B table th:nth-child(2){width:31%}#panel-B table th:nth-child(3){width:44%}
-#panel-B table td{padding:25px 13px!important;vertical-align:top!important}
+#panel-B table td{padding:10px 13px!important;vertical-align:top!important}
 #panel-B .am-callout{grid-column:1/-1;margin-top:0!important;border-color:#83ad96!important;background:#eff6f1!important}
 .efficiency{grid-column:2;grid-row:1;min-width:0;border-left:1px solid var(--deck-line);padding-left:32px;color:var(--deck-ink)}
 .eff-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.eff-head h3{font-size:25px!important;margin:0!important}.eff-head>span{font-size:17px;font-weight:650;color:var(--deck-amber)}
-.eff-intro{font-size:19px;line-height:1.5;color:var(--deck-muted);margin:7px 0 12px}
-.eff-row{padding:11px 0;border-bottom:1px solid var(--deck-line)}.eff-label{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:22px}.eff-label label{font-size:18px;color:var(--deck-muted);white-space:nowrap}
+.eff-common{font-size:18px;color:#176650;font-weight:650;margin:6px 0}.physical-controls{margin-top:16px;padding-top:12px;border-top:1px solid var(--deck-line)}.physical-controls h3{font-size:21px!important;margin:0 0 8px!important}.physical-controls label{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:18px;margin:7px 0}.physical-controls input{width:76px;padding:5px;border:1px solid #bed0c3;border-radius:4px;font:inherit;text-align:right}.physical-controls p{font-size:16px;line-height:1.4;color:#61796e;margin:7px 0}.eff-intro{font-size:19px;line-height:1.5;color:var(--deck-muted);margin:7px 0 12px}
+.eff-row{padding:7px 0;border-bottom:1px solid var(--deck-line)}.eff-label{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:22px}.eff-label label{font-size:18px;color:var(--deck-muted);white-space:nowrap}
 .eff-label input{box-sizing:border-box;width:76px;min-height:38px;padding:2px 7px;border:1px solid #bed0c3;border-radius:4px;font:inherit;font-weight:600;color:var(--deck-ink);background:#fff;text-align:right}.eff-label input:focus{outline:3px solid #a4cbb7;outline-offset:2px}.eff-label input[aria-invalid=true]{border-color:#bd5346}
 .bar{height:9px;background:#edf2ee;margin:8px 0;border-radius:2px;overflow:hidden}.bar span{display:block;height:100%;background:var(--deck-green);width:0;transition:width .15s}.eff-row[data-key=manual] .bar span{background:#8a9a91}.eff-row[data-key=ocr] .bar span{background:#b28a52}
 .eff-result{display:flex;justify-content:space-between;gap:8px;align-items:center;line-height:1.2}.eff-result strong{font-size:23px}.eff-result small{font-size:18px;color:var(--deck-muted)}.eff-result small.worse{color:#b6473e}
@@ -865,17 +865,19 @@ window.addEventListener('DOMContentLoaded',()=>{
  function show(i){current=Math.max(0,Math.min(slides.length-1,i));slides.forEach((s,j)=>{s.classList.toggle('is-active',j===current);s.setAttribute('aria-hidden',String(j!==current));});prev.disabled=current===0;next.disabled=current===slides.length-1;count.textContent=`${current+1} / ${slides.length}`;fit();window.scrollTo(0,0);}
  prev.onclick=()=>show(current-1);next.onclick=()=>show(current+1);document.getElementById('deck-print').onclick=()=>window.print();
  document.addEventListener('keydown',e=>{if(/INPUT|TEXTAREA|SELECT/.test(e.target.tagName))return;if(e.key==='ArrowRight'||e.key==='PageDown'){e.preventDefault();show(current+1);}if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();show(current-1);}});window.addEventListener('resize',fit);
+ const physical=document.getElementById('physical-controls');document.querySelector('#panel-B .am-panel-body>.am-md').append(physical);
+ const commonInputs=[document.getElementById('physical-seconds'),document.getElementById('physical-batch')];
  const keys=['manual','qr','nfc','ocr'],inputs=Object.fromEntries(keys.map(k=>[k,document.getElementById('time-'+k)]));
  const fmt=n=>Number(n.toFixed(1)).toLocaleString('zh-CN');
- function update(){const times={};let valid=true;keys.forEach(k=>{const x=inputs[k],n=Number(x.value),ok=x.value.trim()!==''&&Number.isFinite(n)&&n>=.1&&n<=300;x.setAttribute('aria-invalid',String(!ok));if(!ok)valid=false;times[k]=n;});document.getElementById('eff-warning').hidden=valid;const max=Math.max(...Object.values(times));keys.forEach(k=>{const row=document.querySelector(`[data-key="${k}"]`),result=row.querySelector('strong'),note=row.querySelector('small');row.querySelector('.bar span').style.width=valid?`${times[k]/max*100}%`:'0';if(!valid){result.textContent='—';note.textContent='请检查输入';return;}const minutes=times[k]*300/60;result.textContent=fmt(minutes)+' 分钟';note.classList.remove('worse');if(k==='manual'){note.textContent='人工对照基线';return;}const delta=(times.manual-times[k])*300/60;note.textContent=delta>=0?'比人工少 '+fmt(delta)+' 分钟':'比人工多 '+fmt(-delta)+' 分钟';if(delta<0)note.classList.add('worse');});}
- Object.values(inputs).forEach(input=>input.addEventListener('input',update));update();show(0);
+ function update(){const times={};let valid=true;keys.forEach(k=>{const x=inputs[k],n=Number(x.value),ok=x.value.trim()!==''&&Number.isFinite(n)&&n>=.1&&n<=300;x.setAttribute('aria-invalid',String(!ok));if(!ok)valid=false;times[k]=n;});commonInputs.forEach(x=>{const n=Number(x.value),ok=x.value.trim()!==''&&Number.isFinite(n)&&n>=0&&n<=10000;x.setAttribute('aria-invalid',String(!ok));if(!ok)valid=false;});const common=Number(commonInputs[0].value)*300/60+Number(commonInputs[1].value);document.getElementById('physical-total').textContent=valid?'共同现场动作：'+fmt(common)+' 分钟，各方案均保留':'请核对输入';document.getElementById('eff-warning').hidden=valid;const max=common+Math.max(...Object.values(times))*300/60;keys.forEach(k=>{const row=document.querySelector(`[data-key="${k}"]`),result=row.querySelector('strong'),note=row.querySelector('small'),record=times[k]*300/60,minutes=common+record;row.querySelector('.bar span').style.width=valid?`${minutes/max*100}%`:'0';if(!valid){result.textContent='—';note.textContent='请检查输入';return;}result.textContent=fmt(minutes)+' 分钟';note.classList.remove('worse');if(k==='manual'){note.textContent='其中记录 '+fmt(record)+' 分钟';return;}const delta=(times.manual-times[k])*300/60;note.textContent='记录'+fmt(record)+'分 / '+(delta>=0?'比人工少 '+fmt(delta)+' 分钟':'比人工多 '+fmt(-delta)+' 分钟');if(delta<0)note.classList.add('worse');});}
+ [...Object.values(inputs),...commonInputs].forEach(input=>input.addEventListener('input',update));update();show(0);
 });
 </script></div>
 </section>
 </div>
 </div>
 </main>
-<footer class="am-colophon">Generated by <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" rel="noopener">Answer me with HTML</a> 0.5.0 · 2026-10-19 09:54 · <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" rel="noopener">★ Star on GitHub</a></footer>
+<footer class="am-colophon">Generated by <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" rel="noopener">Answer me with HTML</a> 0.5.0 · 2026-10-19 15:09 · <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" rel="noopener">★ Star on GitHub</a></footer>
 <textarea id="am-source" hidden readonly aria-hidden="true">---
 title: 洁净服识别方案 · 两页摘要
 subtitle: 300套 · 全厂共用3点 · 手机OCR
@@ -884,7 +886,7 @@ template: doc
 theme: shadcn
 mode: light
 style: 80
-版本: 两页汇报版 V2.0
+版本: 检查与记录工时 V2.1
 日期: 2026-10-19
 ---
 ## A 采购与开发预算：优先二维码PDA
@@ -905,7 +907,7 @@ style: 80
 
 完整项目已含共用工作、方案专属工作、15%人工预留和硬件。**不能重复相加。**
 
-```callout warn 预算口径，不是供应商报价
+```callout warn 金额沿用前版，新增逐件检查和打印的开发增量待估算
 费率1,500—2,500元/人天；二维码常规验证已在共用范围。
 硬件均含1套包装打印设备及首批耗材。*NFC含60枚备用标签。
 未计二维码安装人工、材料工艺试验、新服务器、网络、额外许可及税运差旅。
@@ -913,7 +915,7 @@ style: 80
 
 ## B 优缺点与记录效率
 
-**系统主要减少抄写与累计；识别可靠性仍须实物验证。**
+**逐套逐双检查仍需做；系统减少重复填写和人工累计。**
 
 | 方式 | 优点 | 主要局限 |
 |---|---|---|
@@ -922,22 +924,22 @@ style: 80
 | **手机OCR** | 手机兼做相机和终端；硬件较少 | 字迹、光照影响识别；需人工复核；手机进区需QA确认 |
 
 ```html
+&lt;div id=&quot;physical-controls&quot; class=&quot;physical-controls&quot;&gt;&lt;h3&gt;四种方式都要做的现场动作&lt;/h3&gt;&lt;label&gt;逐套/逐双检查、整理（秒/套）&lt;input id=&quot;physical-seconds&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;10000&quot; step=&quot;1&quot; value=&quot;20&quot; aria-label=&quot;每套共同现场动作秒数&quot;&gt;&lt;/label&gt;&lt;label&gt;各批次公共操作合计（分钟）&lt;input id=&quot;physical-batch&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;10000&quot; step=&quot;1&quot; value=&quot;50&quot; aria-label=&quot;全部批次公共现场操作分钟&quot;&gt;&lt;/label&gt;&lt;p&gt;区域设备检查、结束清洁等；20秒与50分钟均待实测。&lt;/p&gt;&lt;/div&gt;
 &lt;div class=&quot;efficiency&quot; aria-label=&quot;手工和系统效率示例&quot;&gt;
-  &lt;div class=&quot;eff-head&quot;&gt;&lt;h3&gt;300套单环节记录工时&lt;/h3&gt;&lt;span&gt;示例假设 · 非实测&lt;/span&gt;&lt;/div&gt;
-  &lt;p class=&quot;eff-intro&quot;&gt;可修改每套耗时，比较结果会同步变化。&lt;/p&gt;
+  &lt;div class=&quot;eff-head&quot;&gt;&lt;h3&gt;300套检查与记录工时&lt;/h3&gt;&lt;span&gt;示例假设 · 非实测&lt;/span&gt;&lt;/div&gt;
+  &lt;p class=&quot;eff-intro&quot;&gt;总工时＝共同现场动作＋记录时间。&lt;/p&gt;&lt;p id=&quot;physical-total&quot; class=&quot;eff-common&quot;&gt;&lt;/p&gt;
   &lt;div class=&quot;eff-row&quot; data-key=&quot;manual&quot;&gt;&lt;div class=&quot;eff-label&quot;&gt;&lt;b&gt;手工记录&lt;/b&gt;&lt;label&gt;&lt;input id=&quot;time-manual&quot; type=&quot;number&quot; min=&quot;0.1&quot; max=&quot;300&quot; step=&quot;0.1&quot; value=&quot;30&quot; aria-label=&quot;人工每套记录秒数&quot;&gt; 秒/套&lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;bar&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;eff-result&quot;&gt;&lt;strong&gt;&lt;/strong&gt;&lt;small&gt;&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;
   &lt;div class=&quot;eff-row&quot; data-key=&quot;qr&quot;&gt;&lt;div class=&quot;eff-label&quot;&gt;&lt;b&gt;二维码PDA&lt;/b&gt;&lt;label&gt;&lt;input id=&quot;time-qr&quot; type=&quot;number&quot; min=&quot;0.1&quot; max=&quot;300&quot; step=&quot;0.1&quot; value=&quot;8&quot; aria-label=&quot;二维码每套记录秒数&quot;&gt; 秒/套&lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;bar&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;eff-result&quot;&gt;&lt;strong&gt;&lt;/strong&gt;&lt;small&gt;&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;
   &lt;div class=&quot;eff-row&quot; data-key=&quot;nfc&quot;&gt;&lt;div class=&quot;eff-label&quot;&gt;&lt;b&gt;NFC刷卡&lt;/b&gt;&lt;label&gt;&lt;input id=&quot;time-nfc&quot; type=&quot;number&quot; min=&quot;0.1&quot; max=&quot;300&quot; step=&quot;0.1&quot; value=&quot;6&quot; aria-label=&quot;NFC每套记录秒数&quot;&gt; 秒/套&lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;bar&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;eff-result&quot;&gt;&lt;strong&gt;&lt;/strong&gt;&lt;small&gt;&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;
   &lt;div class=&quot;eff-row&quot; data-key=&quot;ocr&quot;&gt;&lt;div class=&quot;eff-label&quot;&gt;&lt;b&gt;手机OCR&lt;/b&gt;&lt;label&gt;&lt;input id=&quot;time-ocr&quot; type=&quot;number&quot; min=&quot;0.1&quot; max=&quot;300&quot; step=&quot;0.1&quot; value=&quot;15&quot; aria-label=&quot;OCR每套记录秒数&quot;&gt; 秒/套&lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;bar&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;eff-result&quot;&gt;&lt;strong&gt;&lt;/strong&gt;&lt;small&gt;&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;p id=&quot;eff-warning&quot; role=&quot;alert&quot; hidden&gt;请填写0.1—300秒的有效数值。&lt;/p&gt;
-  &lt;p class=&quot;eff-note&quot;&gt;300套 × 每套秒数 ÷ 60＝分钟。默认秒数不是设备性能承诺。&lt;br&gt;按单人顺序操作；不含批次登记、QA审核及洗灭时长。&lt;/p&gt;
+  &lt;p id=&quot;eff-warning&quot; role=&quot;alert&quot; hidden&gt;记录秒数需为0.1—300；现场动作输入需为0—10000。&lt;/p&gt;
+  &lt;p class=&quot;eff-note&quot;&gt;总＝现场＋300套×记录秒数÷60。示例非实测。&lt;br&gt;记录含批次填写/打印分摊；未计设备运行、QA审核及未定破损处置。&lt;/p&gt;
 &lt;/div&gt;
 ```
 
 ```callout info 实测后再决定采购
-取20—30套衣物，计入拿取、找码/摊平、重试及核对时间。
-同时记录漏记、错绑和误识别，不只比较速度。
-二维码与NFC的耐清洗灭菌能力、笔墨适用性均须验证。
+按完整清洗记录试测20—30套：现场动作、批次填写、逐件填写和打印分别计时。
+不得把环境清洁、破损检查、整理等算作系统省掉的时间。
 ```
 
 ```html
@@ -968,14 +970,14 @@ main.am-doc{min-height:calc(100vh - 80px)!important;display:block!important;posi
 #panel-B .am-panel-body{display:grid!important;grid-template-columns:1.02fr 1fr;gap:24px 42px!important;align-items:start!important}
 #panel-B .am-panel-body&gt;.am-md{min-width:0;grid-column:1}
 #panel-B .am-panel-body&gt;.am-md&gt;p{font-size:22px!important;margin:0 0 18px!important}
-#panel-B table{font-size:23px!important}
+#panel-B table{font-size:21px!important}#panel-B .am-table-wrap{margin:12px 0!important}
 #panel-B table th:first-child{width:25%}#panel-B table th:nth-child(2){width:31%}#panel-B table th:nth-child(3){width:44%}
-#panel-B table td{padding:25px 13px!important;vertical-align:top!important}
+#panel-B table td{padding:10px 13px!important;vertical-align:top!important}
 #panel-B .am-callout{grid-column:1/-1;margin-top:0!important;border-color:#83ad96!important;background:#eff6f1!important}
 .efficiency{grid-column:2;grid-row:1;min-width:0;border-left:1px solid var(--deck-line);padding-left:32px;color:var(--deck-ink)}
 .eff-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.eff-head h3{font-size:25px!important;margin:0!important}.eff-head&gt;span{font-size:17px;font-weight:650;color:var(--deck-amber)}
-.eff-intro{font-size:19px;line-height:1.5;color:var(--deck-muted);margin:7px 0 12px}
-.eff-row{padding:11px 0;border-bottom:1px solid var(--deck-line)}.eff-label{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:22px}.eff-label label{font-size:18px;color:var(--deck-muted);white-space:nowrap}
+.eff-common{font-size:18px;color:#176650;font-weight:650;margin:6px 0}.physical-controls{margin-top:16px;padding-top:12px;border-top:1px solid var(--deck-line)}.physical-controls h3{font-size:21px!important;margin:0 0 8px!important}.physical-controls label{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:18px;margin:7px 0}.physical-controls input{width:76px;padding:5px;border:1px solid #bed0c3;border-radius:4px;font:inherit;text-align:right}.physical-controls p{font-size:16px;line-height:1.4;color:#61796e;margin:7px 0}.eff-intro{font-size:19px;line-height:1.5;color:var(--deck-muted);margin:7px 0 12px}
+.eff-row{padding:7px 0;border-bottom:1px solid var(--deck-line)}.eff-label{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:22px}.eff-label label{font-size:18px;color:var(--deck-muted);white-space:nowrap}
 .eff-label input{box-sizing:border-box;width:76px;min-height:38px;padding:2px 7px;border:1px solid #bed0c3;border-radius:4px;font:inherit;font-weight:600;color:var(--deck-ink);background:#fff;text-align:right}.eff-label input:focus{outline:3px solid #a4cbb7;outline-offset:2px}.eff-label input[aria-invalid=true]{border-color:#bd5346}
 .bar{height:9px;background:#edf2ee;margin:8px 0;border-radius:2px;overflow:hidden}.bar span{display:block;height:100%;background:var(--deck-green);width:0;transition:width .15s}.eff-row[data-key=manual] .bar span{background:#8a9a91}.eff-row[data-key=ocr] .bar span{background:#b28a52}
 .eff-result{display:flex;justify-content:space-between;gap:8px;align-items:center;line-height:1.2}.eff-result strong{font-size:23px}.eff-result small{font-size:18px;color:var(--deck-muted)}.eff-result small.worse{color:#b6473e}
@@ -994,10 +996,12 @@ window.addEventListener(&#39;DOMContentLoaded&#39;,()=&gt;{
  function show(i){current=Math.max(0,Math.min(slides.length-1,i));slides.forEach((s,j)=&gt;{s.classList.toggle(&#39;is-active&#39;,j===current);s.setAttribute(&#39;aria-hidden&#39;,String(j!==current));});prev.disabled=current===0;next.disabled=current===slides.length-1;count.textContent=`${current+1} / ${slides.length}`;fit();window.scrollTo(0,0);}
  prev.onclick=()=&gt;show(current-1);next.onclick=()=&gt;show(current+1);document.getElementById(&#39;deck-print&#39;).onclick=()=&gt;window.print();
  document.addEventListener(&#39;keydown&#39;,e=&gt;{if(/INPUT|TEXTAREA|SELECT/.test(e.target.tagName))return;if(e.key===&#39;ArrowRight&#39;||e.key===&#39;PageDown&#39;){e.preventDefault();show(current+1);}if(e.key===&#39;ArrowLeft&#39;||e.key===&#39;PageUp&#39;){e.preventDefault();show(current-1);}});window.addEventListener(&#39;resize&#39;,fit);
+ const physical=document.getElementById(&#39;physical-controls&#39;);document.querySelector(&#39;#panel-B .am-panel-body&gt;.am-md&#39;).append(physical);
+ const commonInputs=[document.getElementById(&#39;physical-seconds&#39;),document.getElementById(&#39;physical-batch&#39;)];
  const keys=[&#39;manual&#39;,&#39;qr&#39;,&#39;nfc&#39;,&#39;ocr&#39;],inputs=Object.fromEntries(keys.map(k=&gt;[k,document.getElementById(&#39;time-&#39;+k)]));
  const fmt=n=&gt;Number(n.toFixed(1)).toLocaleString(&#39;zh-CN&#39;);
- function update(){const times={};let valid=true;keys.forEach(k=&gt;{const x=inputs[k],n=Number(x.value),ok=x.value.trim()!==&#39;&#39;&amp;&amp;Number.isFinite(n)&amp;&amp;n&gt;=.1&amp;&amp;n&lt;=300;x.setAttribute(&#39;aria-invalid&#39;,String(!ok));if(!ok)valid=false;times[k]=n;});document.getElementById(&#39;eff-warning&#39;).hidden=valid;const max=Math.max(...Object.values(times));keys.forEach(k=&gt;{const row=document.querySelector(`[data-key=&quot;${k}&quot;]`),result=row.querySelector(&#39;strong&#39;),note=row.querySelector(&#39;small&#39;);row.querySelector(&#39;.bar span&#39;).style.width=valid?`${times[k]/max*100}%`:&#39;0&#39;;if(!valid){result.textContent=&#39;—&#39;;note.textContent=&#39;请检查输入&#39;;return;}const minutes=times[k]*300/60;result.textContent=fmt(minutes)+&#39; 分钟&#39;;note.classList.remove(&#39;worse&#39;);if(k===&#39;manual&#39;){note.textContent=&#39;人工对照基线&#39;;return;}const delta=(times.manual-times[k])*300/60;note.textContent=delta&gt;=0?&#39;比人工少 &#39;+fmt(delta)+&#39; 分钟&#39;:&#39;比人工多 &#39;+fmt(-delta)+&#39; 分钟&#39;;if(delta&lt;0)note.classList.add(&#39;worse&#39;);});}
- Object.values(inputs).forEach(input=&gt;input.addEventListener(&#39;input&#39;,update));update();show(0);
+ function update(){const times={};let valid=true;keys.forEach(k=&gt;{const x=inputs[k],n=Number(x.value),ok=x.value.trim()!==&#39;&#39;&amp;&amp;Number.isFinite(n)&amp;&amp;n&gt;=.1&amp;&amp;n&lt;=300;x.setAttribute(&#39;aria-invalid&#39;,String(!ok));if(!ok)valid=false;times[k]=n;});commonInputs.forEach(x=&gt;{const n=Number(x.value),ok=x.value.trim()!==&#39;&#39;&amp;&amp;Number.isFinite(n)&amp;&amp;n&gt;=0&amp;&amp;n&lt;=10000;x.setAttribute(&#39;aria-invalid&#39;,String(!ok));if(!ok)valid=false;});const common=Number(commonInputs[0].value)*300/60+Number(commonInputs[1].value);document.getElementById(&#39;physical-total&#39;).textContent=valid?&#39;共同现场动作：&#39;+fmt(common)+&#39; 分钟，各方案均保留&#39;:&#39;请核对输入&#39;;document.getElementById(&#39;eff-warning&#39;).hidden=valid;const max=common+Math.max(...Object.values(times))*300/60;keys.forEach(k=&gt;{const row=document.querySelector(`[data-key=&quot;${k}&quot;]`),result=row.querySelector(&#39;strong&#39;),note=row.querySelector(&#39;small&#39;),record=times[k]*300/60,minutes=common+record;row.querySelector(&#39;.bar span&#39;).style.width=valid?`${minutes/max*100}%`:&#39;0&#39;;if(!valid){result.textContent=&#39;—&#39;;note.textContent=&#39;请检查输入&#39;;return;}result.textContent=fmt(minutes)+&#39; 分钟&#39;;note.classList.remove(&#39;worse&#39;);if(k===&#39;manual&#39;){note.textContent=&#39;其中记录 &#39;+fmt(record)+&#39; 分钟&#39;;return;}const delta=(times.manual-times[k])*300/60;note.textContent=&#39;记录&#39;+fmt(record)+&#39;分 / &#39;+(delta&gt;=0?&#39;比人工少 &#39;+fmt(delta)+&#39; 分钟&#39;:&#39;比人工多 &#39;+fmt(-delta)+&#39; 分钟&#39;);if(delta&lt;0)note.classList.add(&#39;worse&#39;);});}
+ [...Object.values(inputs),...commonInputs].forEach(input=&gt;input.addEventListener(&#39;input&#39;,update));update();show(0);
 });
 &lt;/script&gt;
 ```
